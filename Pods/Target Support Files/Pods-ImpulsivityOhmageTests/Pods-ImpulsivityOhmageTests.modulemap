@@ -1,0 +1,6 @@
+framework module Pods_ImpulsivityOhmageTests {
+  umbrella header "Pods-ImpulsivityOhmageTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
