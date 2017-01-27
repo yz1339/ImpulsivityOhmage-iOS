@@ -7,6 +7,7 @@ target 'ImpulsivityOhmage' do
 
   # Pods for ImpulsivityOhmage
   pod "OhmageOMHSDK"
+  pod "OhmageOMHSDK/RKSupport"
   pod "sdlrkx"
   pod "ResearchKit", '~> 1.3'
   pod "ResearchSuiteTaskBuilder"

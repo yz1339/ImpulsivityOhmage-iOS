@@ -16,6 +16,8 @@
 		E2C9AEC31E3AFC8400E9F871 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C9AEC11E3AFC8400E9F871 /* LaunchScreen.storyboard */; };
 		E2C9AECE1E3AFC8400E9F871 /* ImpulsivityOhmageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C9AECD1E3AFC8400E9F871 /* ImpulsivityOhmageTests.swift */; };
 		E2C9AEDA1E3AFF8700E9F871 /* OMHClient.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2C9AED91E3AFF8700E9F871 /* OMHClient.plist */; };
+		E2C9AEDC1E3B021800E9F871 /* OhmageCredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C9AEDB1E3B021800E9F871 /* OhmageCredentialStore.swift */; };
+		E2C9AEE71E3B052300E9F871 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C9AEE61E3B052300E9F871 /* LogManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		E2C9AECD1E3AFC8400E9F871 /* ImpulsivityOhmageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpulsivityOhmageTests.swift; sourceTree = "<group>"; };
 		E2C9AECF1E3AFC8400E9F871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2C9AED91E3AFF8700E9F871 /* OMHClient.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OMHClient.plist; sourceTree = "<group>"; };
+		E2C9AEDB1E3B021800E9F871 /* OhmageCredentialStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OhmageCredentialStore.swift; sourceTree = "<group>"; };
+		E2C9AEE61E3B052300E9F871 /* LogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
 		EBAB392F0FB562BDBF3945A5 /* Pods_ImpulsivityOhmage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImpulsivityOhmage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B4E4AB596330E55A437F6A /* Pods_ImpulsivityOhmageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImpulsivityOhmageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -101,7 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				E2C9AEB81E3AFC8400E9F871 /* AppDelegate.swift */,
+				E2C9AEDB1E3B021800E9F871 /* OhmageCredentialStore.swift */,
 				E2C9AEBA1E3AFC8400E9F871 /* ViewController.swift */,
+				E2C9AEE61E3B052300E9F871 /* LogManager.swift */,
 				E2C9AEBC1E3AFC8400E9F871 /* Main.storyboard */,
 				E2C9AED81E3AFF6400E9F871 /* Supporting Files */,
 			);
@@ -344,7 +350,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C9AEE71E3B052300E9F871 /* LogManager.swift in Sources */,
 				E2C9AEBB1E3AFC8400E9F871 /* ViewController.swift in Sources */,
+				E2C9AEDC1E3B021800E9F871 /* OhmageCredentialStore.swift in Sources */,
 				E2C9AEB91E3AFC8400E9F871 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

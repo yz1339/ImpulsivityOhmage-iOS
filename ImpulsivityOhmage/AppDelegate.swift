@@ -7,11 +7,34 @@
 //
 
 import UIKit
+import OhmageOMHSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var ohmageManager: OhmageOMHManager! = {
+        let omhClientDetails = NSDictionary(contentsOfFile: Bundle.main.path(forResource: "OMHClient", ofType: "plist")!)
+        
+        guard let baseURL = omhClientDetails?["OMHBaseURL"] as? String,
+            let clientID = omhClientDetails?["OMHClientID"] as? String,
+            let clientSecret = omhClientDetails?["OMHClientSecret"] as? String else {
+                fatalError("Could not initialze OhmageManager")
+        }
+        
+        if OhmageOMHManager.config(baseURL: baseURL,
+                                   clientID: clientID,
+                                   clientSecret: clientSecret,
+                                   queueStorageDirectory: "ohmageSDK",
+                                   store: OhmageCredentialStore(),
+                                   logger: LogManager.sharedInstance) {
+            return OhmageOMHManager.shared
+        }
+        else {
+            fatalError("Could not initialze OhmageManager")
+        }
+    }()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
