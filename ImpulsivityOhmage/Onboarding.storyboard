@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nMC-Yc-huG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="d2c-dL-quc">
+            <objects>
+                <viewController id="nMC-Yc-huG" customClass="CTFOnboardingViewController" customModule="ImpulsivityOhmage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZMf-M1-0yc"/>
+                        <viewControllerLayoutGuide type="bottom" id="zop-Gu-RzL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VtS-gR-bTP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRV-co-KYX">
+                                <rect key="frame" x="141" y="617" width="92" height="30"/>
+                                <state key="normal" title="Try it out first"/>
+                                <connections>
+                                    <action selector="skipSignInPressed:" destination="nMC-Yc-huG" eventType="touchUpInside" id="ZmJ-r7-hEB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQM-0r-AMc">
+                                <rect key="frame" x="164" y="579" width="47" height="30"/>
+                                <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="signInPressed:" destination="nMC-Yc-huG" eventType="touchUpInside" id="6k3-RA-1Tw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zop-Gu-RzL" firstAttribute="top" secondItem="QRV-co-KYX" secondAttribute="bottom" constant="20" id="ZrW-OP-W3x"/>
+                            <constraint firstItem="mQM-0r-AMc" firstAttribute="centerX" secondItem="VtS-gR-bTP" secondAttribute="centerX" id="fPk-PW-SwW"/>
+                            <constraint firstItem="QRV-co-KYX" firstAttribute="centerX" secondItem="VtS-gR-bTP" secondAttribute="centerX" id="sSd-pa-Qwd"/>
+                            <constraint firstItem="QRV-co-KYX" firstAttribute="top" secondItem="mQM-0r-AMc" secondAttribute="bottom" constant="8" id="t08-jI-5FM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="signInButton" destination="mQM-0r-AMc" id="rPQ-0D-t0f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ByQ-A9-FLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-209" y="-182"/>
+        </scene>
+    </scenes>
+</document>

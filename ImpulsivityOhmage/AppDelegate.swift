@@ -1,3 +1,4 @@
+
 //
 //  AppDelegate.swift
 //  ImpulsivityOhmage
@@ -27,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                    clientID: clientID,
                                    clientSecret: clientSecret,
                                    queueStorageDirectory: "ohmageSDK",
-                                   store: OhmageCredentialStore(),
+                                   store: OhmageCredentialStore.sharedInstance,
                                    logger: LogManager.sharedInstance) {
             return OhmageOMHManager.shared
         }
@@ -35,11 +36,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             fatalError("Could not initialze OhmageManager")
         }
     }()
-
+    
+    open func showViewController() -> Bool {
+        
+        guard let window = self.window else {
+            return false
+        }
+        
+        if CTFAppState.sharedInstance.isSignedInOrSkipped {
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = mainStoryboard.instantiateInitialViewController()
+            window.rootViewController = vc
+        }
+        else {
+            let onboardingStoryboard = UIStoryboard(name: "Onboarding", bundle: nil)
+            let vc = onboardingStoryboard.instantiateInitialViewController()
+            window.rootViewController = vc
+        }
+        
+        return true
+        
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+        
+        if UserDefaults.standard.object(forKey: "FirstRun") == nil {
+            UserDefaults.standard.set("1stRun", forKey: "FirstRun")
+            UserDefaults.standard.synchronize()
+            
+            OhmageCredentialStore.clearKeychain()
+
+        }
+
+        return self.showViewController()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

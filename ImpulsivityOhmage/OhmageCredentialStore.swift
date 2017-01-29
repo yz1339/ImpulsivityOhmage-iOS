@@ -9,8 +9,11 @@
 import UIKit
 import ResearchKit
 import OhmageOMHSDK
+import ResearchSuiteTaskBuilder
 
-class OhmageCredentialStore: OhmageOMHSDKCredentialStore {
+class OhmageCredentialStore: OhmageOMHSDKCredentialStore, RSTBStateHelper {
+    
+    static let sharedInstance = OhmageCredentialStore()
     
     static func setKeychainObject(_ object: NSSecureCoding?, forKey key: String) {
         do {
@@ -44,6 +47,14 @@ class OhmageCredentialStore: OhmageOMHSDKCredentialStore {
             print("Got error \(error) when getting \(key). This may just be the key has not yet been set!!")
             return nil
         }
+    }
+    
+    func valueInState(forKey: String) -> NSSecureCoding? {
+        return self.get(key: forKey)
+    }
+    
+    func setValueInState(value: NSSecureCoding?, forKey: String) {
+        self.set(value: value, key: forKey)
     }
 
     

@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		3A8A55DC3F69800F4BDA54F9 /* Pods_ImpulsivityOhmage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAB392F0FB562BDBF3945A5 /* Pods_ImpulsivityOhmage.framework */; };
 		BCF14CEF284FACBF39806E0C /* Pods_ImpulsivityOhmageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B4E4AB596330E55A437F6A /* Pods_ImpulsivityOhmageTests.framework */; };
+		E2021BF41E3E68AC005B7E07 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2021BF31E3E68AC005B7E07 /* Onboarding.storyboard */; };
+		E2021BF61E3E6983005B7E07 /* CTFActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2021BF51E3E6983005B7E07 /* CTFActivitiesViewController.swift */; };
+		E2021BF81E3E698E005B7E07 /* CTFSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2021BF71E3E698E005B7E07 /* CTFSettingsViewController.swift */; };
+		E2021BFA1E3E69DA005B7E07 /* CTFOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2021BF91E3E69DA005B7E07 /* CTFOnboardingViewController.swift */; };
+		E2021BFC1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2021BFB1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift */; };
+		E2021BFE1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2021BFD1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift */; };
+		E2021C001E3E8F3D005B7E07 /* CTFAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2021BFF1E3E8F3D005B7E07 /* CTFAppState.swift */; };
+		E2A9D54F1E3E9AE7000B4626 /* ConsentStepGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D54E1E3E9AE7000B4626 /* ConsentStepGenerator.swift */; };
 		E2C9AEB91E3AFC8400E9F871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C9AEB81E3AFC8400E9F871 /* AppDelegate.swift */; };
 		E2C9AEBB1E3AFC8400E9F871 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C9AEBA1E3AFC8400E9F871 /* ViewController.swift */; };
 		E2C9AEBE1E3AFC8400E9F871 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C9AEBC1E3AFC8400E9F871 /* Main.storyboard */; };
@@ -35,6 +43,14 @@
 		3B3065FC7C4F4B513C49DFEB /* Pods-ImpulsivityOhmageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImpulsivityOhmageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImpulsivityOhmageTests/Pods-ImpulsivityOhmageTests.release.xcconfig"; sourceTree = "<group>"; };
 		71F0610AD9625BDF8B5B4F81 /* Pods-ImpulsivityOhmageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImpulsivityOhmageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImpulsivityOhmageTests/Pods-ImpulsivityOhmageTests.debug.xcconfig"; sourceTree = "<group>"; };
 		77DCE47493A8854B49A7A57B /* Pods-ImpulsivityOhmage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImpulsivityOhmage.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImpulsivityOhmage/Pods-ImpulsivityOhmage.release.xcconfig"; sourceTree = "<group>"; };
+		E2021BF31E3E68AC005B7E07 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		E2021BF51E3E6983005B7E07 /* CTFActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFActivitiesViewController.swift; sourceTree = "<group>"; };
+		E2021BF71E3E698E005B7E07 /* CTFSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFSettingsViewController.swift; sourceTree = "<group>"; };
+		E2021BF91E3E69DA005B7E07 /* CTFOnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFOnboardingViewController.swift; sourceTree = "<group>"; };
+		E2021BFB1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFTaskBuilderManager.swift; sourceTree = "<group>"; };
+		E2021BFD1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpulsivityConsentSample.swift; sourceTree = "<group>"; };
+		E2021BFF1E3E8F3D005B7E07 /* CTFAppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFAppState.swift; sourceTree = "<group>"; };
+		E2A9D54E1E3E9AE7000B4626 /* ConsentStepGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentStepGenerator.swift; sourceTree = "<group>"; };
 		E2C9AEB51E3AFC8400E9F871 /* ImpulsivityOhmage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImpulsivityOhmage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C9AEB81E3AFC8400E9F871 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2C9AEBA1E3AFC8400E9F871 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +97,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E2021BE81E3E5979005B7E07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E2021BF21E3E66F8005B7E07 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E2C9AEBC1E3AFC8400E9F871 /* Main.storyboard */,
+				E2021BF31E3E68AC005B7E07 /* Onboarding.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		E2A9D54D1E3E9AD7000B4626 /* RSTB */ = {
+			isa = PBXGroup;
+			children = (
+				E2A9D54E1E3E9AE7000B4626 /* ConsentStepGenerator.swift */,
+			);
+			name = RSTB;
+			sourceTree = "<group>";
+		};
 		E2C9AEAC1E3AFC8400E9F871 = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +148,15 @@
 				E2C9AEDB1E3B021800E9F871 /* OhmageCredentialStore.swift */,
 				E2C9AEBA1E3AFC8400E9F871 /* ViewController.swift */,
 				E2C9AEE61E3B052300E9F871 /* LogManager.swift */,
-				E2C9AEBC1E3AFC8400E9F871 /* Main.storyboard */,
+				E2021BF51E3E6983005B7E07 /* CTFActivitiesViewController.swift */,
+				E2021BF71E3E698E005B7E07 /* CTFSettingsViewController.swift */,
+				E2021BF91E3E69DA005B7E07 /* CTFOnboardingViewController.swift */,
+				E2021BFB1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift */,
+				E2021BFD1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift */,
+				E2021BFF1E3E8F3D005B7E07 /* CTFAppState.swift */,
+				E2A9D54D1E3E9AD7000B4626 /* RSTB */,
+				E2021BF21E3E66F8005B7E07 /* Storyboards */,
+				E2021BE81E3E5979005B7E07 /* Resources */,
 				E2C9AED81E3AFF6400E9F871 /* Supporting Files */,
 			);
 			path = ImpulsivityOhmage;
@@ -237,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2C9AEDA1E3AFF8700E9F871 /* OMHClient.plist in Resources */,
+				E2021BF41E3E68AC005B7E07 /* Onboarding.storyboard in Resources */,
 				E2C9AEC31E3AFC8400E9F871 /* LaunchScreen.storyboard in Resources */,
 				E2C9AEC01E3AFC8400E9F871 /* Assets.xcassets in Resources */,
 				E2C9AEBE1E3AFC8400E9F871 /* Main.storyboard in Resources */,
@@ -350,10 +399,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2021BFC1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift in Sources */,
+				E2A9D54F1E3E9AE7000B4626 /* ConsentStepGenerator.swift in Sources */,
+				E2021BFE1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift in Sources */,
 				E2C9AEE71E3B052300E9F871 /* LogManager.swift in Sources */,
+				E2021BF81E3E698E005B7E07 /* CTFSettingsViewController.swift in Sources */,
+				E2021BF61E3E6983005B7E07 /* CTFActivitiesViewController.swift in Sources */,
 				E2C9AEBB1E3AFC8400E9F871 /* ViewController.swift in Sources */,
 				E2C9AEDC1E3B021800E9F871 /* OhmageCredentialStore.swift in Sources */,
+				E2021C001E3E8F3D005B7E07 /* CTFAppState.swift in Sources */,
 				E2C9AEB91E3AFC8400E9F871 /* AppDelegate.swift in Sources */,
+				E2021BFA1E3E69DA005B7E07 /* CTFOnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
