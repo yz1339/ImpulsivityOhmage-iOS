@@ -1,5 +1,5 @@
 //
-//  CTFOhmageGoNoGoSummaryResultsGenerator.swift
+//  CTFOhmageResultsGenerator.swift
 //  ImpulsivityOhmage
 //
 //  Created by James Kizer on 1/30/17.
@@ -9,15 +9,15 @@
 import UIKit
 import OMHClient
 
-class CTFOhmageGoNoGoSummaryResultsTransformer: IntermediateDatapointTransformer {
+class CTFOhmageResultsTransformer: IntermediateDatapointTransformer {
     
     public static func transform(intermediateResult: CTFIntermediateResult) -> OMHDataPoint? {
         
-        guard let goNoGoSummary = intermediateResult as? CTFGoNoGoSummary else {
+        guard let ohmDatapoint = intermediateResult as? OMHDataPoint else {
             return nil
         }
         
-        return goNoGoSummary
+        return ohmDatapoint
     }
 
 }

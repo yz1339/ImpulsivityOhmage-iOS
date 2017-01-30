@@ -19,14 +19,7 @@ class CTFOhmageResultBackEndManager: CTFResultBackEndManager {
     
     public func add(intermediateResult: CTFIntermediateResult) {
         //map intermediateResult onto OMH Datapoint
-        guard let transformer: IntermediateDatapointTransformer.Type = {
-            switch(intermediateResult.type) {
-                case "GoNoGoSummary":
-                return CTFOhmageGoNoGoSummaryResultsTransformer.self
-            default:
-                return nil
-            }
-            }(),
+        guard let transformer: IntermediateDatapointTransformer.Type = CTFOhmageResultsTransformer.self,
             let datapoint: OMHDataPoint = transformer.transform(intermediateResult: intermediateResult) else {
                 return
         }

@@ -23,21 +23,21 @@ extension Collection where Iterator.Element == Int, Index == Int {
 }
 
 
-struct CTFBARTTrial {
-    var earningsPerPump: Float!
-    var maxPayingPumps: Int!
-    var trialIndex: Int!
+public struct CTFBARTTrial {
+    public var earningsPerPump: Float!
+    public var maxPayingPumps: Int!
+    public var trialIndex: Int!
 }
 
-struct CTFBARTTrialResult {
-    var trial: CTFBARTTrial!
-    var numPumps: Int!
-    var payout: Float!
-    var exploded: Bool!
+public struct CTFBARTTrialResult {
+    public var trial: CTFBARTTrial!
+    public var numPumps: Int!
+    public var payout: Float!
+    public var exploded: Bool!
 }
 
-class CTFBARTResult: ORKResult {
-    var trialResults: [CTFBARTTrialResult]?
+public class CTFBARTResult: ORKResult {
+    public var trialResults: [CTFBARTTrialResult]!
 }
 
 

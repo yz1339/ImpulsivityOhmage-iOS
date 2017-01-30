@@ -20,7 +20,8 @@ class CTFResultFrontEndManager: NSObject {
     private var backEndManager: CTFResultBackEndManager! = CTFOhmageResultBackEndManager()
     
     static private let transformers: [ResultIntermediateTransformer.Type] = [
-        CTFGoNoGoSummaryResultsTransformer.self
+        CTFGoNoGoSummaryResultsTransformer.self,
+        CTFBARTSummaryResultsTransformer.self
     ]
     
     private override init() {
