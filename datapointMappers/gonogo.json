@@ -1,0 +1,55 @@
+[
+    {
+        "field":"header.participant_id",
+        "displayName":"Participant ID"
+    },
+    {
+        "field":"header.acquisition_provenance.source_creation_date_time",
+        "displayName":"Date",
+        "cellFilter":"date:'yyyy-MM-dd HH:mm'"
+    },
+    {
+        "field":"body.total.numberOfTrials",
+        "displayName":"Number of Trials"
+    },
+    {
+        "field":"body.total.numberOfCorrectResponses",
+        "displayName":"Number of Correct Responses"
+    },
+    {
+        "field":"body.total.numberOfCorrectNonresponses",
+        "displayName":"Number of Correct Nonresponses"
+    },
+    {
+        "field":"body.total.numberOfIncorrectResponses",
+        "displayName":"Number of Incorrect Responses"
+    },
+    {
+        "field":"body.total.numberOfIncorrectResponses",
+        "displayName":"Number of Incorrect Nonresponses"
+    },
+    {
+        "field":"body.total.meanAccuracy",
+        "displayName":"Mean Accuracy"
+    },
+    {
+        "field":"body.total.responseTimeMean",
+        "displayName":"Mean Response Time"
+    },
+    {
+        "field":"body.total.responseTimeMin",
+        "displayName":"Minumum Response Time"
+    },
+    {
+        "field":"body.total.responseTimeMax",
+        "displayName":"Maximum Response Time"
+    },
+    {
+        "field":"body.total.meanResponseTimeCorrect",
+        "displayName":"Mean Response Time (Correct)"
+    },
+    {
+        "field":"body.total.meanResponseTimeIncorrect",
+        "displayName":"Mean Response Time (Incorrect)"
+    }
+]

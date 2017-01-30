@@ -1,38 +1,38 @@
 //
-//  CTFBARTSummaryResultsGenerator.swift
+//  CTFDelayDiscountingRawResultsTransformer.swift
 //  ImpulsivityOhmage
 //
 //  Created by James Kizer on 1/30/17.
 //  Copyright © 2017 Foundry @ Cornell Tech. All rights reserved.
 //
 
-import UIKit
-import ResearchKit
 import sdlrkx
+import ResearchKit
 
-class CTFBARTSummaryResultsTransformer: ResultIntermediateTransformer {
+class CTFDelayDiscountingRawResultsTransformer: ResultIntermediateTransformer {
     
     public static func transform(parameters: [String: ORKStepResult]) -> CTFIntermediateResult? {
         
-        guard let bartResult = parameters["BARTResult"]?.firstResult as? CTFBARTResult else {
+        guard let ddResult = parameters["DelayDiscountingResult"]?.firstResult as? CTFDelayDiscountingResult else {
             return nil
         }
         
-        guard let summary = CTFBARTSummary(result: bartResult) else {
+        guard let summary = CTFDelayDiscountingRaw(result: ddResult) else {
             return nil
         }
         
-        summary.startDate = bartResult.startDate
-        summary.endDate = bartResult.endDate
+        summary.startDate = ddResult.startDate
+        summary.endDate = ddResult.endDate
         
         return summary
     }
     
     private static let supportedTypes = [
-        "BARTSummary"
+        "DelayDiscountingRaw"
     ]
     
     public static func supportsType(type: String) -> Bool {
         return self.supportedTypes.contains(type)
     }
+    
 }

@@ -16,6 +16,7 @@
 		E2021BFC1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2021BFB1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift */; };
 		E2021BFE1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2021BFD1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift */; };
 		E2021C001E3E8F3D005B7E07 /* CTFAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2021BFF1E3E8F3D005B7E07 /* CTFAppState.swift */; };
+		E26CD3541E3FD7FE008510C6 /* CTFDelayDiscountingRaw+OMHDatapoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26CD3531E3FD7FE008510C6 /* CTFDelayDiscountingRaw+OMHDatapoint.swift */; };
 		E2A9D54F1E3E9AE7000B4626 /* ConsentStepGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D54E1E3E9AE7000B4626 /* ConsentStepGenerator.swift */; };
 		E2A9D55D1E3EAE84000B4626 /* CTFScheduleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D55C1E3EAE84000B4626 /* CTFScheduleItem.swift */; };
 		E2A9D55F1E3EB06E000B4626 /* CTFSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D55E1E3EB06E000B4626 /* CTFSchedule.swift */; };
@@ -50,6 +51,8 @@
 		E2C9AEDA1E3AFF8700E9F871 /* OMHClient.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2C9AED91E3AFF8700E9F871 /* OMHClient.plist */; };
 		E2C9AEDC1E3B021800E9F871 /* OhmageCredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C9AEDB1E3B021800E9F871 /* OhmageCredentialStore.swift */; };
 		E2C9AEE71E3B052300E9F871 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C9AEE61E3B052300E9F871 /* LogManager.swift */; };
+		E2FB1F201E3FD2A0003A30CD /* CTFDelayDiscountingRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FB1F1F1E3FD2A0003A30CD /* CTFDelayDiscountingRaw.swift */; };
+		E2FB1F221E3FD446003A30CD /* CTFDelayDiscountingRawResultsTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FB1F211E3FD446003A30CD /* CTFDelayDiscountingRawResultsTransformer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,7 @@
 		E2021BFB1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFTaskBuilderManager.swift; sourceTree = "<group>"; };
 		E2021BFD1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpulsivityConsentSample.swift; sourceTree = "<group>"; };
 		E2021BFF1E3E8F3D005B7E07 /* CTFAppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFAppState.swift; sourceTree = "<group>"; };
+		E26CD3531E3FD7FE008510C6 /* CTFDelayDiscountingRaw+OMHDatapoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CTFDelayDiscountingRaw+OMHDatapoint.swift"; sourceTree = "<group>"; };
 		E2A9D54E1E3E9AE7000B4626 /* ConsentStepGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentStepGenerator.swift; sourceTree = "<group>"; };
 		E2A9D55C1E3EAE84000B4626 /* CTFScheduleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFScheduleItem.swift; sourceTree = "<group>"; };
 		E2A9D55E1E3EB06E000B4626 /* CTFSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFSchedule.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 		E2C9AED91E3AFF8700E9F871 /* OMHClient.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OMHClient.plist; sourceTree = "<group>"; };
 		E2C9AEDB1E3B021800E9F871 /* OhmageCredentialStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OhmageCredentialStore.swift; sourceTree = "<group>"; };
 		E2C9AEE61E3B052300E9F871 /* LogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		E2FB1F1F1E3FD2A0003A30CD /* CTFDelayDiscountingRaw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFDelayDiscountingRaw.swift; sourceTree = "<group>"; };
+		E2FB1F211E3FD446003A30CD /* CTFDelayDiscountingRawResultsTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFDelayDiscountingRawResultsTransformer.swift; sourceTree = "<group>"; };
 		EBAB392F0FB562BDBF3945A5 /* Pods_ImpulsivityOhmage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImpulsivityOhmage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B4E4AB596330E55A437F6A /* Pods_ImpulsivityOhmageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImpulsivityOhmageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -203,9 +209,11 @@
 			children = (
 				E2A9D57D1E3EF455000B4626 /* CTFGoNoGoSummary.swift */,
 				E2A9D58B1E3FB715000B4626 /* CTFBARTSummary.swift */,
+				E2FB1F1F1E3FD2A0003A30CD /* CTFDelayDiscountingRaw.swift */,
 				E2A9D57B1E3EF3C8000B4626 /* CTFIntermediateResult.swift */,
 				E2A9D5851E3F7B4C000B4626 /* CTFGoNoGoSummaryResultsTransformer.swift */,
 				E2A9D58D1E3FC11B000B4626 /* CTFBARTSummaryResultsTransformer.swift */,
+				E2FB1F211E3FD446003A30CD /* CTFDelayDiscountingRawResultsTransformer.swift */,
 				E2A9D5771E3EF2EA000B4626 /* CTFResultFrontEndManager.swift */,
 			);
 			name = "Front End";
@@ -218,6 +226,7 @@
 				E2A9D5791E3EF3A8000B4626 /* CTFResultBackEndManager.swift */,
 				E2A9D5831E3EF8EE000B4626 /* CTFGoNoGoSummary+OHMDatapoint.swift */,
 				E2A9D58F1E3FC5D5000B4626 /* CTFBARTSummary+OHMDatapoint.swift */,
+				E26CD3531E3FD7FE008510C6 /* CTFDelayDiscountingRaw+OMHDatapoint.swift */,
 				E2A9D5891E3F7E89000B4626 /* CTFOhmageResultsTransformer.swift */,
 			);
 			name = "Back End";
@@ -514,10 +523,12 @@
 			files = (
 				E2021BFC1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift in Sources */,
 				E2A9D54F1E3E9AE7000B4626 /* ConsentStepGenerator.swift in Sources */,
+				E2FB1F201E3FD2A0003A30CD /* CTFDelayDiscountingRaw.swift in Sources */,
 				E2021BFE1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift in Sources */,
 				E2A9D58C1E3FB715000B4626 /* CTFBARTSummary.swift in Sources */,
 				E2A9D55F1E3EB06E000B4626 /* CTFSchedule.swift in Sources */,
 				E2C9AEE71E3B052300E9F871 /* LogManager.swift in Sources */,
+				E2FB1F221E3FD446003A30CD /* CTFDelayDiscountingRawResultsTransformer.swift in Sources */,
 				E2A9D57A1E3EF3A8000B4626 /* CTFResultBackEndManager.swift in Sources */,
 				E2021BF81E3E698E005B7E07 /* CTFSettingsViewController.swift in Sources */,
 				E2A9D57E1E3EF455000B4626 /* CTFGoNoGoSummary.swift in Sources */,
@@ -534,6 +545,7 @@
 				E2A9D5901E3FC5D5000B4626 /* CTFBARTSummary+OHMDatapoint.swift in Sources */,
 				E2A9D58E1E3FC11B000B4626 /* CTFBARTSummaryResultsTransformer.swift in Sources */,
 				E2A9D58A1E3F7E89000B4626 /* CTFOhmageResultsTransformer.swift in Sources */,
+				E26CD3541E3FD7FE008510C6 /* CTFDelayDiscountingRaw+OMHDatapoint.swift in Sources */,
 				E2021C001E3E8F3D005B7E07 /* CTFAppState.swift in Sources */,
 				E2A9D55D1E3EAE84000B4626 /* CTFScheduleItem.swift in Sources */,
 				E2C9AEB91E3AFC8400E9F871 /* AppDelegate.swift in Sources */,

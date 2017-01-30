@@ -21,7 +21,8 @@ class CTFResultFrontEndManager: NSObject {
     
     static private let transformers: [ResultIntermediateTransformer.Type] = [
         CTFGoNoGoSummaryResultsTransformer.self,
-        CTFBARTSummaryResultsTransformer.self
+        CTFBARTSummaryResultsTransformer.self,
+        CTFDelayDiscountingRawResultsTransformer.self
     ]
     
     private override init() {

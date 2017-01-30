@@ -12,7 +12,7 @@
       "type"        : "CTFGoNoGoActiveStep",
       "identifier"       : "go_no_go_stable_stimulus_active_task",
       "parameters": {
-        "numberOfTrials": 15,
+        "numberOfTrials": 75,
         "waitTime": 0.25,
         "crossTime": 0.25,
         "blankTime": 0.25,

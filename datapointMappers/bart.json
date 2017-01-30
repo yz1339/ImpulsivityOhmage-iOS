@@ -1,0 +1,65 @@
+[
+    {
+        "field":"header.participant_id",
+        "displayName":"Participant ID"
+    },
+    {
+        "field":"header.acquisition_provenance.source_creation_date_time",
+        "displayName":"Date",
+        "cellFilter":"date:'yyyy-MM-dd HH:mm'"
+    },
+    {
+        "field":"body.variable_label",
+        "displayName":"Variable Label"
+    },
+    {
+        "field":"body.max_pumps_per_balloon",
+        "displayName":"Max Pumps per Balloon"
+    },
+
+    {
+        "field":"body.number_of_balloons",
+        "displayName":"Number of Balloons"
+    },
+
+    {
+        "field":"body.number_of_explosions",
+        "displayName":"Number of Explosions"
+    },
+
+    {
+        "field":"body.pumps_mean",
+        "displayName":"Mean pumps"
+    },
+
+    {
+        "field":"body.pumps_range",
+        "displayName":"Range pumps"
+    },
+
+    {
+        "field":"body.pumps_standard_deviation",
+        "displayName":"Standard deviation pumps"
+    },
+
+    {
+        "field":"body.mean_pumps_after_explode",
+        "displayName":"Mean pumps after explosion"
+    },
+
+    {
+        "field":"body.mean_pumps_after_no_explode",
+        "displayName":"Mean pumps after no explosion"
+    },
+
+    {
+        "field":"body.mean_pumps_after_no_explode",
+        "displayName":"Mean pumps after no explosion"
+    },
+
+    {
+        "field":"body.total_gains",
+        "displayName":"Total gains"
+    },
+
+]

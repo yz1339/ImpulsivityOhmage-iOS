@@ -1,0 +1,32 @@
+[
+    {
+        "field":"header.participant_id",
+        "displayName":"Participant ID"
+    },
+    {
+        "field":"header.acquisition_provenance.source_creation_date_time",
+        "displayName":"Date",
+        "cellFilter":"date:'yyyy-MM-dd HH:mm'"
+    },
+    {
+        "field":"body.variable_label",
+        "displayName":"Variable Label"
+    },
+    {
+        "field":"body.now_array",
+        "displayName":"Now Array"
+    },
+    {
+        "field":"body.later_array",
+        "displayName":"Later Array"
+    },
+    {
+        "field":"body.choice_array",
+        "displayName":"Choice Array"
+    },
+    {
+        "field":"body.times",
+        "displayName":"Response Times"
+    },
+
+]
