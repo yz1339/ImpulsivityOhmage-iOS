@@ -13,7 +13,15 @@
         "type": "elementFile",
         "identifier": "go_no_go_stable_stimulus_short_task",
         "elementFileName": "go_no_go_stable_stimulus_short_task"
-      }
+      },
+      "resultTransforms": [
+        {
+          "transform": "GoNoGoSummary",
+          "inputMapping": [
+            {"stepIdentifier":"go_no_go_stable_stimulus_active_task", "parameter":"GoNoGoResult"}
+          ]
+        }
+      ]
     },
     {
       "type": "recurring",
@@ -24,7 +32,15 @@
         "type": "elementFile",
         "identifier": "go_no_go_variable_stimulus_short_task",
         "elementFileName": "go_no_go_variable_stimulus_short_task"
-      }
+      },
+      "resultTransforms": [
+        {
+          "transform": "GoNoGoSummary",
+          "inputMapping": [
+            {"stepIdentifier":"go_no_go_variable_stimulus_active_task", "parameter":"GoNoGoResult"}
+          ]
+        }
+      ]
     },
 
     {
@@ -36,7 +52,15 @@
         "type": "elementFile",
         "identifier": "bart_25_cents_short_task",
         "elementFileName": "bart_25_cents_short_task"
-      }
+      },
+      "resultTransforms": [
+        {
+          "transform": "BARTSummary",
+          "inputMapping": [
+            {"stepIdentifier":"bart_25_cents_active_task", "parameter":"BARTResult"}
+          ]
+        }
+      ]
     },
     {
       "type": "recurring",
@@ -47,7 +71,15 @@
         "type": "elementFile",
         "identifier": "bart_250_dollars_short_task",
         "elementFileName": "bart_250_dollars_short_task"
-      }
+      },
+      "resultTransforms": [
+        {
+          "transform": "GoNoGoSummary",
+          "inputMapping": [
+            {"stepIdentifier":"bart_250_dollars_active_task", "parameter":"BARTResult"}
+          ]
+        }
+      ]
     },
 
 
@@ -60,7 +92,15 @@
         "type": "elementFile",
         "identifier": "dd_money_1_month_short_task",
         "elementFileName": "dd_money_1_month_short_task"
-      }
+      },
+      "resultTransforms": [
+        {
+          "transform": "DelayedDiscountingSummary",
+          "inputMapping": [
+            {"stepIdentifier":"dd_money_1_month", "parameter":"DelayedDiscountingResult"}
+          ]
+        }
+      ]
     },
     {
       "type": "recurring",
@@ -71,7 +111,15 @@
         "type": "elementFile",
         "identifier": "dd_money_6_month_short_task",
         "elementFileName": "dd_money_6_month_short_task"
-      }
+      },
+      "resultTransforms": [
+        {
+          "transform": "DelayedDiscountingSummary",
+          "inputMapping": [
+            {"stepIdentifier":"dd_money_6_month", "parameter":"DelayedDiscountingResult"}
+          ]
+        }
+      ]
     },
     {
       "type": "recurring",
@@ -82,7 +130,15 @@
         "type": "elementFile",
         "identifier": "dd_time_1_month_short_task",
         "elementFileName": "dd_time_1_month_short_task"
-      }
+      },
+      "resultTransforms": [
+        {
+          "transform": "DelayedDiscountingSummary",
+          "inputMapping": [
+            {"stepIdentifier":"dd_time_1_month", "parameter":"DelayedDiscountingResult"}
+          ]
+        }
+      ]
     },
     {
       "type": "recurring",
@@ -93,9 +149,15 @@
         "type": "elementFile",
         "identifier": "dd_time_6_month_short_task",
         "elementFileName": "dd_time_6_month_short_task"
-      }
-    },
-
-
+      },
+      "resultTransforms": [
+        {
+          "transform": "DelayedDiscountingSummary",
+          "inputMapping": [
+            {"stepIdentifier":"dd_time_6_month", "parameter":"DelayedDiscountingResult"}
+          ]
+        }
+      ]
+    }
   ]
 }

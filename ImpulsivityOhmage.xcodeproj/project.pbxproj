@@ -28,6 +28,15 @@
 		E2A9D56F1E3EBE8D000B4626 /* dd_money_6_month_short_task.json in Resources */ = {isa = PBXBuildFile; fileRef = E2A9D5691E3EBE8D000B4626 /* dd_money_6_month_short_task.json */; };
 		E2A9D5701E3EBE8D000B4626 /* dd_time_1_month_short_task.json in Resources */ = {isa = PBXBuildFile; fileRef = E2A9D56A1E3EBE8D000B4626 /* dd_time_1_month_short_task.json */; };
 		E2A9D5711E3EBE8D000B4626 /* dd_time_6_month_short_task.json in Resources */ = {isa = PBXBuildFile; fileRef = E2A9D56B1E3EBE8D000B4626 /* dd_time_6_month_short_task.json */; };
+		E2A9D5741E3EF0E9000B4626 /* CTFResultTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D5731E3EF0E9000B4626 /* CTFResultTransform.swift */; };
+		E2A9D5761E3EF10A000B4626 /* CTFResultTransformInputMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D5751E3EF10A000B4626 /* CTFResultTransformInputMapping.swift */; };
+		E2A9D5781E3EF2EA000B4626 /* CTFResultFrontEndManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D5771E3EF2EA000B4626 /* CTFResultFrontEndManager.swift */; };
+		E2A9D57A1E3EF3A8000B4626 /* CTFResultBackEndManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D5791E3EF3A8000B4626 /* CTFResultBackEndManager.swift */; };
+		E2A9D57C1E3EF3C8000B4626 /* CTFIntermediateResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D57B1E3EF3C8000B4626 /* CTFIntermediateResult.swift */; };
+		E2A9D57E1E3EF455000B4626 /* CTFGoNoGoSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D57D1E3EF455000B4626 /* CTFGoNoGoSummary.swift */; };
+		E2A9D5801E3EF4F3000B4626 /* CTFOhmageResultBackEndManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D57F1E3EF4F3000B4626 /* CTFOhmageResultBackEndManager.swift */; };
+		E2A9D5821E3EF820000B4626 /* OMHGoNoGoSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D5811E3EF820000B4626 /* OMHGoNoGoSummary.swift */; };
+		E2A9D5841E3EF8EE000B4626 /* CTFGoNoGoSummary+OHMDatapoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D5831E3EF8EE000B4626 /* CTFGoNoGoSummary+OHMDatapoint.swift */; };
 		E2C9AEB91E3AFC8400E9F871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C9AEB81E3AFC8400E9F871 /* AppDelegate.swift */; };
 		E2C9AEBB1E3AFC8400E9F871 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C9AEBA1E3AFC8400E9F871 /* ViewController.swift */; };
 		E2C9AEBE1E3AFC8400E9F871 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C9AEBC1E3AFC8400E9F871 /* Main.storyboard */; };
@@ -73,6 +82,15 @@
 		E2A9D5691E3EBE8D000B4626 /* dd_money_6_month_short_task.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dd_money_6_month_short_task.json; sourceTree = "<group>"; };
 		E2A9D56A1E3EBE8D000B4626 /* dd_time_1_month_short_task.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dd_time_1_month_short_task.json; sourceTree = "<group>"; };
 		E2A9D56B1E3EBE8D000B4626 /* dd_time_6_month_short_task.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dd_time_6_month_short_task.json; sourceTree = "<group>"; };
+		E2A9D5731E3EF0E9000B4626 /* CTFResultTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFResultTransform.swift; sourceTree = "<group>"; };
+		E2A9D5751E3EF10A000B4626 /* CTFResultTransformInputMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFResultTransformInputMapping.swift; sourceTree = "<group>"; };
+		E2A9D5771E3EF2EA000B4626 /* CTFResultFrontEndManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFResultFrontEndManager.swift; sourceTree = "<group>"; };
+		E2A9D5791E3EF3A8000B4626 /* CTFResultBackEndManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFResultBackEndManager.swift; sourceTree = "<group>"; };
+		E2A9D57B1E3EF3C8000B4626 /* CTFIntermediateResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFIntermediateResult.swift; sourceTree = "<group>"; };
+		E2A9D57D1E3EF455000B4626 /* CTFGoNoGoSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFGoNoGoSummary.swift; sourceTree = "<group>"; };
+		E2A9D57F1E3EF4F3000B4626 /* CTFOhmageResultBackEndManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFOhmageResultBackEndManager.swift; sourceTree = "<group>"; };
+		E2A9D5811E3EF820000B4626 /* OMHGoNoGoSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMHGoNoGoSummary.swift; sourceTree = "<group>"; };
+		E2A9D5831E3EF8EE000B4626 /* CTFGoNoGoSummary+OHMDatapoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CTFGoNoGoSummary+OHMDatapoint.swift"; sourceTree = "<group>"; };
 		E2C9AEB51E3AFC8400E9F871 /* ImpulsivityOhmage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImpulsivityOhmage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C9AEB81E3AFC8400E9F871 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2C9AEBA1E3AFC8400E9F871 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,9 +174,25 @@
 			isa = PBXGroup;
 			children = (
 				E2A9D55C1E3EAE84000B4626 /* CTFScheduleItem.swift */,
+				E2A9D5731E3EF0E9000B4626 /* CTFResultTransform.swift */,
+				E2A9D5751E3EF10A000B4626 /* CTFResultTransformInputMapping.swift */,
 				E2A9D55E1E3EB06E000B4626 /* CTFSchedule.swift */,
 			);
 			name = "Study Management";
+			sourceTree = "<group>";
+		};
+		E2A9D5721E3EF079000B4626 /* ResultsProcessing */ = {
+			isa = PBXGroup;
+			children = (
+				E2A9D5771E3EF2EA000B4626 /* CTFResultFrontEndManager.swift */,
+				E2A9D5791E3EF3A8000B4626 /* CTFResultBackEndManager.swift */,
+				E2A9D57F1E3EF4F3000B4626 /* CTFOhmageResultBackEndManager.swift */,
+				E2A9D57B1E3EF3C8000B4626 /* CTFIntermediateResult.swift */,
+				E2A9D57D1E3EF455000B4626 /* CTFGoNoGoSummary.swift */,
+				E2A9D5831E3EF8EE000B4626 /* CTFGoNoGoSummary+OHMDatapoint.swift */,
+				E2A9D5811E3EF820000B4626 /* OMHGoNoGoSummary.swift */,
+			);
+			name = ResultsProcessing;
 			sourceTree = "<group>";
 		};
 		E2C9AEAC1E3AFC8400E9F871 = {
@@ -194,6 +228,7 @@
 				E2021BFB1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift */,
 				E2021BFD1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift */,
 				E2021BFF1E3E8F3D005B7E07 /* CTFAppState.swift */,
+				E2A9D5721E3EF079000B4626 /* ResultsProcessing */,
 				E2A9D55B1E3EAE69000B4626 /* Study Management */,
 				E2A9D54D1E3E9AD7000B4626 /* RSTB */,
 				E2021BF21E3E66F8005B7E07 /* Storyboards */,
@@ -454,10 +489,19 @@
 				E2021BFE1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift in Sources */,
 				E2A9D55F1E3EB06E000B4626 /* CTFSchedule.swift in Sources */,
 				E2C9AEE71E3B052300E9F871 /* LogManager.swift in Sources */,
+				E2A9D57A1E3EF3A8000B4626 /* CTFResultBackEndManager.swift in Sources */,
 				E2021BF81E3E698E005B7E07 /* CTFSettingsViewController.swift in Sources */,
+				E2A9D5821E3EF820000B4626 /* OMHGoNoGoSummary.swift in Sources */,
+				E2A9D57E1E3EF455000B4626 /* CTFGoNoGoSummary.swift in Sources */,
+				E2A9D5841E3EF8EE000B4626 /* CTFGoNoGoSummary+OHMDatapoint.swift in Sources */,
+				E2A9D57C1E3EF3C8000B4626 /* CTFIntermediateResult.swift in Sources */,
+				E2A9D5761E3EF10A000B4626 /* CTFResultTransformInputMapping.swift in Sources */,
 				E2021BF61E3E6983005B7E07 /* CTFActivitiesViewController.swift in Sources */,
+				E2A9D5781E3EF2EA000B4626 /* CTFResultFrontEndManager.swift in Sources */,
 				E2C9AEBB1E3AFC8400E9F871 /* ViewController.swift in Sources */,
 				E2C9AEDC1E3B021800E9F871 /* OhmageCredentialStore.swift in Sources */,
+				E2A9D5801E3EF4F3000B4626 /* CTFOhmageResultBackEndManager.swift in Sources */,
+				E2A9D5741E3EF0E9000B4626 /* CTFResultTransform.swift in Sources */,
 				E2021C001E3E8F3D005B7E07 /* CTFAppState.swift in Sources */,
 				E2A9D55D1E3EAE84000B4626 /* CTFScheduleItem.swift in Sources */,
 				E2C9AEB91E3AFC8400E9F871 /* AppDelegate.swift in Sources */,

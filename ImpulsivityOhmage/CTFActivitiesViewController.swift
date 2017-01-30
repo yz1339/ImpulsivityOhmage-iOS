@@ -120,7 +120,6 @@ class CTFActivitiesViewController: UITableViewController, ORKTaskViewControllerD
                 return
         }
         
-        
         let task = ORKOrderedTask(identifier: item.identifier, steps: steps)
         
         let taskViewController = ORKTaskViewController(task: task, taskRun: nil)
@@ -129,6 +128,11 @@ class CTFActivitiesViewController: UITableViewController, ORKTaskViewControllerD
         self.taskFinishedHandler = { [weak self] (taskViewController, reason, error) in
             
             if reason == ORKTaskViewControllerFinishReason.completed {
+                
+                let taskResult: ORKTaskResult = taskViewController.result
+                
+                CTFResultFrontEndManager.sharedInstance.processResult(taskResult: taskResult, resultTransforms: item.resultTransforms)
+                
                 
             }
             

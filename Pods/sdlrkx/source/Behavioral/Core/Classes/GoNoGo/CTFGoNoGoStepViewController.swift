@@ -58,7 +58,7 @@ struct CTFGoNoGoTrialResult {
     
 }
 
-class CTFGoNoGoResult: ORKResult {
+public class CTFGoNoGoResult: ORKResult {
     var trialResults: [CTFGoNoGoTrialResult]?
 }
 
