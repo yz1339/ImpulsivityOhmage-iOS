@@ -11,13 +11,13 @@ import OMHClient
 
 class ImpulsivityConsentSample: ConsentSample {
     
-    static let schema = OMHSchema(
+    static let impulsivitySchema = OMHSchema(
         name: "impulsivity-consent",
         version: "1.0",
         namespace: "cornell")
     
     override open var schema: OMHSchema {
-        return ImpulsivityConsentSample.schema
+        return ImpulsivityConsentSample.impulsivitySchema
     }
     
 }

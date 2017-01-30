@@ -8,6 +8,7 @@
 
 import UIKit
 import ResearchSuiteTaskBuilder
+import sdlrkx
 
 class CTFTaskBuilderManager: NSObject {
     
@@ -20,6 +21,9 @@ class CTFTaskBuilderManager: NSObject {
         RSTBTimePickerStepGenerator(),
         RSTBFormStepGenerator(),
         RSTBBooleanStepGenerator(),
+        CTFBARTStepGenerator(),
+        CTFDelayDiscountingStepGenerator(),
+        CTFGoNoGoStepGenerator(),
         RSTBDefaultStepGenerator()
     ]
     
@@ -55,6 +59,25 @@ class CTFTaskBuilderManager: NSObject {
         super.init()
         
         
+    }
+    
+    static func getJson(forFilename filename: String, inBundle bundle: Bundle = Bundle.main) -> JsonElement? {
+        
+        guard let filePath = bundle.path(forResource: filename, ofType: "json")
+            else {
+                assertionFailure("unable to locate file \(filename)")
+                return nil
+        }
+        
+        guard let fileContent = try? Data(contentsOf: URL(fileURLWithPath: filePath))
+            else {
+                assertionFailure("Unable to create NSData with content of file \(filePath)")
+                return nil
+        }
+        
+        let json = try! JSONSerialization.jsonObject(with: fileContent, options: JSONSerialization.ReadingOptions.mutableContainers)
+        
+        return json as JsonElement?
     }
     
 
