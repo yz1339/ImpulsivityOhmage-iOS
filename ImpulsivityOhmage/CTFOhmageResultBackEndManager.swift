@@ -10,21 +10,24 @@ import UIKit
 import OMHClient
 import OhmageOMHSDK
 
+protocol IntermediateDatapointTransformer {
+    static func transform(intermediateResult: CTFIntermediateResult) -> OMHDataPoint?
+}
+
+
 class CTFOhmageResultBackEndManager: CTFResultBackEndManager {
-    
-    typealias IntermediateDatapointTransform = (CTFIntermediateResult) -> OMHDataPoint?
     
     public func add(intermediateResult: CTFIntermediateResult) {
         //map intermediateResult onto OMH Datapoint
-        guard let transform: IntermediateDatapointTransform = {
+        guard let transformer: IntermediateDatapointTransformer.Type = {
             switch(intermediateResult.type) {
                 case "GoNoGoSummary":
-                return CTFOhmageResultBackEndManager.goNoGoSummaryTransform
+                return CTFOhmageGoNoGoSummaryResultsTransformer.self
             default:
                 return nil
             }
             }(),
-            let datapoint: OMHDataPoint = transform(intermediateResult) else {
+            let datapoint: OMHDataPoint = transformer.transform(intermediateResult: intermediateResult) else {
                 return
         }
         
@@ -35,13 +38,6 @@ class CTFOhmageResultBackEndManager: CTFResultBackEndManager {
         
     }
     
-    private static func goNoGoSummaryTransform(_ intermediateResult: CTFIntermediateResult) -> OMHDataPoint? {
-        
-        guard let goNoGoSummary = intermediateResult as? CTFGoNoGoSummary else {
-            return nil
-        }
-
-        return goNoGoSummary
-    }
+    
 
 }

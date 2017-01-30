@@ -41,6 +41,8 @@ public enum OMHClientError: Error {
     //others
     case otherError(underlyingError: NSError?)
     
+    case invalidDatapoint
+    
 }
 
 extension OMHClientError {

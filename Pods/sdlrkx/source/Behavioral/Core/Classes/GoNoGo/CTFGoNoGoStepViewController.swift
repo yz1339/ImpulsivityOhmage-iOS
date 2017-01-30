@@ -9,19 +9,19 @@
 import UIKit
 import ResearchKit
 
-enum CTFGoNoGoCueType {
+public enum CTFGoNoGoCueType {
     case go
     case noGo
 }
 
-enum CTFGoNoGoTargetType {
+public enum CTFGoNoGoTargetType {
     case go
     case noGo
 }
 
 
 
-enum CTFGoNoGoResponseCode{
+public enum CTFGoNoGoResponseCode{
     /**
      correctBlue = user does not tap when rectangle is blue (NoGo target)
      incorrectBlue = user taps when rectangle is blue ( NoGo target)
@@ -34,32 +34,32 @@ enum CTFGoNoGoResponseCode{
     case incorrectGreen
 }
 
-struct CTFGoNoGoTrial {
+public struct CTFGoNoGoTrial {
     
-    var waitTime: TimeInterval!
-    var crossTime : TimeInterval!
-    var blankTime:TimeInterval!
-    var cueTime: TimeInterval!
-    var fillTime : TimeInterval!
+    public var waitTime: TimeInterval!
+    public var crossTime : TimeInterval!
+    public var blankTime:TimeInterval!
+    public var cueTime: TimeInterval!
+    public var fillTime : TimeInterval!
     
-    var cue: CTFGoNoGoCueType!
-    var target: CTFGoNoGoTargetType!
+    public var cue: CTFGoNoGoCueType!
+    public var target: CTFGoNoGoTargetType!
     
-    var trialIndex: Int!
+    public var trialIndex: Int!
     
 }
 
-struct CTFGoNoGoTrialResult {
+public struct CTFGoNoGoTrialResult {
     
-    var trial: CTFGoNoGoTrial?
+    public var trial: CTFGoNoGoTrial!
     
-    var responseTime: TimeInterval?
-    var tapped: Bool?
+    public var responseTime: TimeInterval!
+    public var tapped: Bool!
     
 }
 
 public class CTFGoNoGoResult: ORKResult {
-    var trialResults: [CTFGoNoGoTrialResult]?
+    public var trialResults: [CTFGoNoGoTrialResult]!
 }
 
 

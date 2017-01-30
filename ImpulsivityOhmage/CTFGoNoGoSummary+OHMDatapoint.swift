@@ -37,7 +37,10 @@ extension CTFGoNoGoSummary: OMHDataPointBuilder {
     
     open var body: [String: Any] {
         return [
-            "works": true
+            "total": self.totalSummary.toDict(),
+            "firstThird": self.firstThirdSummary.toDict(),
+            "middleThird": self.middleThirdSummary.toDict(),
+            "lastThird": self.lastThirdSummary.toDict()
         ]
     }
 

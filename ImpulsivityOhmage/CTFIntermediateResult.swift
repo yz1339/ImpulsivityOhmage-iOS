@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CTFIntermediateResult: NSObject {
+open class CTFIntermediateResult: NSObject {
     
     let type: String!
     var uuid: UUID! = UUID()

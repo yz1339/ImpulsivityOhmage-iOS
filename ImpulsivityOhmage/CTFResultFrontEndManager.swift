@@ -8,26 +8,30 @@
 
 import UIKit
 import ResearchKit
-import sdlrkx
+
+protocol ResultIntermediateTransformer {
+    static func transform(parameters: [String: ORKStepResult]) -> CTFIntermediateResult?
+    static func supportsType(type: String) -> Bool
+}
 
 class CTFResultFrontEndManager: NSObject {
     
     static let sharedInstance = CTFResultFrontEndManager()
     private var backEndManager: CTFResultBackEndManager! = CTFOhmageResultBackEndManager()
     
-    typealias ResultIntermediateTransform = ([String: ORKStepResult]) -> CTFIntermediateResult?
+    static private let transformers: [ResultIntermediateTransformer.Type] = [
+        CTFGoNoGoSummaryResultsTransformer.self
+    ]
     
     private override init() {
+        
+        
         
     }
     
     public func processResult(taskResult: ORKTaskResult, resultTransforms: [CTFResultTransform]) {
         
         let intermediateResults = resultTransforms.flatMap { (resultTransform) -> CTFIntermediateResult? in
-            
-            guard let transform = CTFResultFrontEndManager.getTransform(transformType: resultTransform.transform) else {
-                return nil
-            }
             
             var selectedResults: [String: ORKStepResult] = [:]
             resultTransform.inputMapping.forEach({ (inputMapping) in
@@ -38,7 +42,7 @@ class CTFResultFrontEndManager: NSObject {
                 
             })
             
-            return transform(selectedResults)
+            return CTFResultFrontEndManager.transformResult(type: resultTransform.transform, parameters: selectedResults)
         }
         
         intermediateResults.forEach { (intermediateResult) in
@@ -49,31 +53,18 @@ class CTFResultFrontEndManager: NSObject {
         
     }
     
-    private static func getTransform(transformType: String) -> ResultIntermediateTransform? {
-        switch(transformType) {
-            case "GoNoGoSummary":
-            return CTFResultFrontEndManager.goNoGoTransform
-            
-        default:
-            return nil
-        }
-    }
     
-    private static func goNoGoTransform(parameters: [String: ORKStepResult]) -> CTFIntermediateResult? {
-        
-        guard let goNoGoResult = parameters["GoNoGoResult"]?.firstResult as? CTFGoNoGoResult else {
-            return nil
-        }
-        
-        var summary = CTFGoNoGoSummary(type: "GoNoGoSummary")
-        summary.startDate = goNoGoResult.startDate
-        summary.endDate = goNoGoResult.endDate
-        
-        return summary
-    }
-    
-    
+    static public func transformResult(type: String, parameters: [String: ORKStepResult]) -> CTFIntermediateResult? {
 
-    
+        for transformer in CTFResultFrontEndManager.transformers {
+            if transformer.supportsType(type: type),
+                let intermediateResult = transformer.transform(parameters: parameters) {
+                return intermediateResult
+            }
+        }
+        
+        return nil
+        
+    }
     
 }
