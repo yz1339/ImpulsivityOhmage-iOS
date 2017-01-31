@@ -128,7 +128,7 @@ open class OMHClient: NSObject {
         
         let sampleDict = sample.toDict()
         return JSONSerialization.isValidJSONObject(sampleDict)
-
+        
     }
     
     open func postSample(

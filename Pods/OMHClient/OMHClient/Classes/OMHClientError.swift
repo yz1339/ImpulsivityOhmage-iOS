@@ -41,6 +41,7 @@ public enum OMHClientError: Error {
     //others
     case otherError(underlyingError: NSError?)
     
+    //If datapoint fails json serialization
     case invalidDatapoint
     
 }

@@ -10,25 +10,7 @@ import UIKit
 import ResearchKit
 
 
-public enum CTFDelayDiscountingChoice{
-    case Now
-    case Later
-}
 
-
-public struct CTFDelayDiscountingTrial{
-    public var now:Double!
-    public var later:Double!
-    public var questionNum:Int
-    public var differenceValue:Double!
-}
-
-public struct CTFDelayDiscountingTrialResult{
-    public var trial:CTFDelayDiscountingTrial!
-    public var choiceType: CTFDelayDiscountingChoice!
-    public var choiceValue: Double!
-    public var choiceTime: TimeInterval! //time required to make choice
-}
 
 class CTFDelayDiscountingStepViewController: ORKStepViewController {
     
