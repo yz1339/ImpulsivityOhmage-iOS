@@ -17,9 +17,17 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>The camera is unused in this application. You should deny this request.</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>HealthKit is unused in this application. You should deny this request.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>HealthKit is unused in this application. You should deny this request.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>The microphone is unused in this application. You should deny this request.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
