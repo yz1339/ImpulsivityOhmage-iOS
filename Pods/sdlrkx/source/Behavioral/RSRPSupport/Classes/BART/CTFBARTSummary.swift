@@ -178,9 +178,5 @@ public final class CTFBARTSummary: RSRPIntermediateResult {
         
         return bodyDictionary
     }
-    
-    
-    
-    
 
 }

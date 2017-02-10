@@ -131,7 +131,7 @@ class CTFActivitiesViewController: UITableViewController, ORKTaskViewControllerD
                 
                 let taskResult: ORKTaskResult = taskViewController.result
                 
-                CTFResultFrontEndManager.sharedInstance.processResult(taskResult: taskResult, resultTransforms: item.resultTransforms)
+                CTFResultsProcessorManager.sharedResultsProcessor.processResult(taskResult: taskResult, resultTransforms: item.resultTransforms)
                 
                 
             }

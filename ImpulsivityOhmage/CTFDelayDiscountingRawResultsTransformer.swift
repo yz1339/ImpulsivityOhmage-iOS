@@ -8,10 +8,11 @@
 
 import sdlrkx
 import ResearchKit
+import ResearchSuiteResultsProcessor
 
-class CTFDelayDiscountingRawResultsTransformer: ResultIntermediateTransformer {
+class CTFDelayDiscountingRawResultsTransformer: RSRPFrontEndTransformer {
     
-    public static func transform(parameters: [String: ORKStepResult]) -> CTFIntermediateResult? {
+    public static func transform(parameters: [String: ORKStepResult]) -> RSRPIntermediateResult? {
         
         guard let ddResult = parameters["DelayDiscountingResult"]?.firstResult as? CTFDelayDiscountingResult else {
             return nil

@@ -1,0 +1,30 @@
+{
+  "name": "ResearchSuiteResultsProcessor",
+  "version": "0.0.1",
+  "summary": "A short description of ResearchSuiteResultsProcessor.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jdkizer9/ResearchSuiteResultsProcessor",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jdkizer9": "james.kizer@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/jdkizer9/ResearchSuiteResultsProcessor.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "ResearchSuiteResultsProcessor/Classes/**/*",
+  "dependencies": {
+    "ResearchKit": [
+      "~> 1.3"
+    ],
+    "Gloss": [
+      "~> 1.1"
+    ]
+  }
+}

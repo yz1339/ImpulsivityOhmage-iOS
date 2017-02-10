@@ -8,15 +8,18 @@ target 'ImpulsivityOhmage' do
   # Pods for ImpulsivityOhmage
   # pod "OhmageOMHSDK", :path => '~/Developer/Foundry/ohmage/RSuiteSDKs/OhmageOMHSDK'
   # pod "OhmageOMHSDK/RKSupport", :path => '~/Developer/Foundry/ohmage/RSuiteSDKs/OhmageOMHSDK'
+  # pod "OhmageOMHSDK/RSRPSupport", :path => '~/Developer/Foundry/ohmage/RSuiteSDKs/OhmageOMHSDK'
   # pod "sdlrkx", :path => '~/Developer/Foundry/ResearchSuite/ios/sdl-rkx'
   # pod "ResearchKit", '~> 1.3'
   # pod "ResearchSuiteTaskBuilder", :path => '~/Developer/Foundry/ResearchSuite/ios/ResearchSuiteTaskBuilder'
 
   pod "OhmageOMHSDK"
   pod "OhmageOMHSDK/RKSupport"
+  pod "OhmageOMHSDK/RSRPSupport"
   pod "sdlrkx"
   pod "ResearchKit", '~> 1.3'
   pod "ResearchSuiteTaskBuilder"
+  pod "ResearchSuiteResultsProcessor"
 
   target 'ImpulsivityOhmageTests' do
     inherit! :search_paths

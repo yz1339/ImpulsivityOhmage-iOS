@@ -11,7 +11,7 @@ import ResearchKit
 import sdlrkx
 import ResearchSuiteResultsProcessor
 
-class CTFBARTSummaryResultsTransformer: RSRPFrontEndTransformer {
+public class CTFBARTSummaryResultsTransformer: RSRPFrontEndTransformer {
     
     public static func transform(parameters: [String: ORKStepResult]) -> RSRPIntermediateResult? {
         

@@ -8,6 +8,7 @@
 
 import Gloss
 import ResearchSuiteTaskBuilder
+import ResearchSuiteResultsProcessor
 
 class CTFScheduleItem: Decodable {
     
@@ -17,7 +18,7 @@ class CTFScheduleItem: Decodable {
     public let guid: String!
     
     public let activity: JSON!
-    public let resultTransforms: [CTFResultTransform]!
+    public let resultTransforms: [RSRPResultTransform]!
     
     // MARK: - Deserialization
     
@@ -28,7 +29,7 @@ class CTFScheduleItem: Decodable {
             let title: String = "title" <~~ json,
             let guid: String = "guid" <~~ json,
             let activity: JSON = "activity" <~~ json,
-            let resultTransforms: [CTFResultTransform] = "resultTransforms" <~~ json else {
+            let resultTransforms: [RSRPResultTransform] = "resultTransforms" <~~ json else {
                 return nil
         }
         self.type = type
