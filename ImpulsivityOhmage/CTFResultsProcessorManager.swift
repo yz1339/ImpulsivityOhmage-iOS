@@ -22,9 +22,12 @@ class CTFResultsProcessorManager: NSObject {
         
         self.rsrp = RSRPResultsProcessor(
             frontEndTransformers: [
+                DemographicsResultTransformer.self,
+                CTFDelayDiscountingRawResultsTransformer.self,
+                
+                
                 CTFBARTSummaryResultsTransformer.self,
-                CTFGoNoGoSummaryResultsTransformer.self,
-                CTFDelayDiscountingRawResultsTransformer.self
+                CTFGoNoGoSummaryResultsTransformer.self
             ], backEnd: ORBEManager())
         
         super.init()

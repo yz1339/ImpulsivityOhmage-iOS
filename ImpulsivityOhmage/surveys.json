@@ -58,6 +58,77 @@
         "identifier": "baseline-4",
         "elementFileName": "baseline-4"
       }
-    }
+    },
+    {
+      "type": "recurring",
+      "identifier": "Baseline",
+      "title": "Baseline #5",
+      "guid": "Baseline-5",
+      "activity": {
+        "type": "elementFile",
+        "identifier": "baseline-5",
+        "elementFileName": "baseline-5"
+      },
+      "resultTransforms": [
+        {
+          "transform": "Demographics",
+          "inputMapping": [
+            {"stepIdentifier":"gender", "parameter":"GenderChoiceResult"},
+            {"stepIdentifier":"age", "parameter":"AgeIntegerResult"},
+            {"stepIdentifier":"zip_code", "parameter":"ZipTextResult"},
+            {"stepIdentifier":"education", "parameter":"EducationChoiceResult"},
+            {"stepIdentifier":"employment_income", "parameter":"EmploymentChoiceResult"}
+          ]
+        }
+      ]
+    },
+    {
+      "type": "recurring",
+      "identifier": "Baseline",
+      "title": "Baseline #6",
+      "guid": "Baseline-6",
+      "activity": {
+        "type": "elementFile",
+        "identifier": "baseline-6",
+        "elementFileName": "baseline-6"
+      },
+      "resultTransforms": [
+        {
+          "transform": "Demographics",
+          "inputMapping": [
+            {"stepIdentifier":"gender", "parameter":"GenderChoiceResult"},
+            {"stepIdentifier":"age", "parameter":"AgeIntegerResult"},
+            {"stepIdentifier":"zip_code", "parameter":"ZipTextResult"},
+            {"stepIdentifier":"education", "parameter":"EducationChoiceResult"},
+            {"stepIdentifier":"employment_income", "parameter":"EmploymentChoiceResult"}
+          ]
+        },
+        {
+          "transform": "DelayDiscountingRaw",
+          "inputMapping": [
+            {"stepIdentifier":"dd_money_1_month", "parameter":"DelayDiscountingResult"}
+          ]
+        }
+      ]
+    },
+    {
+      "type": "recurring",
+      "identifier": "bart250",
+      "title": "BART $250",
+      "guid": "bart250-1",
+      "activity": {
+        "type": "elementFile",
+        "identifier": "bart_250_dollars_short_task",
+        "elementFileName": "bart_250_dollars_short_task"
+      },
+      "resultTransforms": [
+        {
+          "transform": "GoNoGoSummary",
+          "inputMapping": [
+            {"stepIdentifier":"bart_250_dollars_active_task", "parameter":"BARTResult"}
+          ]
+        }
+      ]
+    },
   ]
 }
