@@ -1,0 +1,63 @@
+{
+  "type": "surveys",
+  "identifier": "HTechSurveys",
+  "title": "Surveys",
+  "guid": "impusivity-activities-123",
+  "items": [
+    {
+      "type": "recurring",
+      "identifier": "demographics",
+      "title": "Demographics",
+      "guid": "demographics-1",
+      "activity": {
+        "type": "elementFile",
+        "identifier": "demographicsFile",
+        "elementFileName": "demographics"
+      }
+    },
+    {
+      "type": "recurring",
+      "identifier": "Baseline",
+      "title": "Baseline #1",
+      "guid": "Baseline-1",
+      "activity": {
+        "type": "elementFile",
+        "identifier": "baseline-1",
+        "elementFileName": "baseline-1"
+      }
+    },
+    {
+      "type": "recurring",
+      "identifier": "Baseline",
+      "title": "Baseline #2",
+      "guid": "Baseline-2",
+      "activity": {
+        "type": "elementFile",
+        "identifier": "baseline-2",
+        "elementFileName": "baseline-2"
+      }
+    },
+    {
+      "type": "recurring",
+      "identifier": "Baseline",
+      "title": "Baseline #3",
+      "guid": "Baseline-3",
+      "activity": {
+        "type": "elementFile",
+        "identifier": "baseline-3",
+        "elementFileName": "baseline-3"
+      }
+    },
+    {
+      "type": "recurring",
+      "identifier": "Baseline",
+      "title": "Baseline #4",
+      "guid": "Baseline-4",
+      "activity": {
+        "type": "elementFile",
+        "identifier": "baseline-4",
+        "elementFileName": "baseline-4"
+      }
+    }
+  ]
+}

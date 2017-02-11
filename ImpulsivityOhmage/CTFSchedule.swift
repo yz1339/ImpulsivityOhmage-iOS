@@ -20,12 +20,12 @@ class CTFSchedule: Decodable {
     // MARK: - Deserialization
     
     required public init?(json: JSON) {
-        
+
         guard let type: String = "type" <~~ json,
             let identifier: String = "identifier" <~~ json,
             let title: String = "title" <~~ json,
             let guid: String = "guid" <~~ json,
-            let items: [CTFScheduleItem] = "items" <~~ json else {
+            let items: [JSON] = "items" <~~ json else {
                 return nil
         }
         self.type = type
@@ -33,7 +33,11 @@ class CTFSchedule: Decodable {
         self.title = title
         self.guid = guid
         
-        self.items = items
+        self.items = items.flatMap { (json) -> CTFScheduleItem? in
+            
+            return CTFScheduleItem(json: json)
+            
+        }
         
     }
 

@@ -12,12 +12,17 @@ import sdlrkx
 
 class CTFTaskBuilderManager: NSObject {
     
+    static let randomMultipleChoice = false
+    
     static let stepGeneratorServices: [RSTBStepGenerator] = [
         RSTBInstructionStepGenerator(),
         RSTBTextFieldStepGenerator(),
         RSTBIntegerStepGenerator(),
         RSTBSingleChoiceStepGenerator(),
-        RSTBMultipleChoiceStepGenerator(),
+        
+        randomMultipleChoice ? RSTBMultipleChoiceStepGenerator() : CTFMultipleChoice(),
+        CTFRandomMultipleChoice(),
+        
         RSTBTimePickerStepGenerator(),
         RSTBFormStepGenerator(),
         RSTBBooleanStepGenerator(),

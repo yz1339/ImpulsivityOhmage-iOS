@@ -16,6 +16,15 @@
 		E2021BFC1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2021BFB1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift */; };
 		E2021BFE1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2021BFD1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift */; };
 		E2021C001E3E8F3D005B7E07 /* CTFAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2021BFF1E3E8F3D005B7E07 /* CTFAppState.swift */; };
+		E2208AE91E4E8D4D0063D31F /* demographics.json in Resources */ = {isa = PBXBuildFile; fileRef = E2208AE81E4E8D4D0063D31F /* demographics.json */; };
+		E2208AEB1E4E8F170063D31F /* surveys.json in Resources */ = {isa = PBXBuildFile; fileRef = E2208AEA1E4E8F170063D31F /* surveys.json */; };
+		E2208AED1E4E97A60063D31F /* baseline-1.json in Resources */ = {isa = PBXBuildFile; fileRef = E2208AEC1E4E97A60063D31F /* baseline-1.json */; };
+		E2208AEF1E4E9BD60063D31F /* baseline-2.json in Resources */ = {isa = PBXBuildFile; fileRef = E2208AEE1E4E9BD60063D31F /* baseline-2.json */; };
+		E2208AF11E4E9C410063D31F /* CTFRandomMultipleChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2208AF01E4E9C410063D31F /* CTFRandomMultipleChoice.swift */; };
+		E2208AF31E4E9CF20063D31F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2208AF21E4E9CF20063D31F /* Extensions.swift */; };
+		E2208AF51E4E9DBA0063D31F /* CTFMultipleChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2208AF41E4E9DBA0063D31F /* CTFMultipleChoice.swift */; };
+		E2208AF71E4E9F000063D31F /* baseline-3.json in Resources */ = {isa = PBXBuildFile; fileRef = E2208AF61E4E9F000063D31F /* baseline-3.json */; };
+		E2208AF91E4EA5B50063D31F /* baseline-4.json in Resources */ = {isa = PBXBuildFile; fileRef = E2208AF81E4EA5B50063D31F /* baseline-4.json */; };
 		E2A89A431E4E4B60003EF895 /* CTFResultsProcessorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A89A421E4E4B60003EF895 /* CTFResultsProcessorManager.swift */; };
 		E2A9D54F1E3E9AE7000B4626 /* ConsentStepGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D54E1E3E9AE7000B4626 /* ConsentStepGenerator.swift */; };
 		E2A9D55D1E3EAE84000B4626 /* CTFScheduleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D55C1E3EAE84000B4626 /* CTFScheduleItem.swift */; };
@@ -62,6 +71,15 @@
 		E2021BFB1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFTaskBuilderManager.swift; sourceTree = "<group>"; };
 		E2021BFD1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpulsivityConsentSample.swift; sourceTree = "<group>"; };
 		E2021BFF1E3E8F3D005B7E07 /* CTFAppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFAppState.swift; sourceTree = "<group>"; };
+		E2208AE81E4E8D4D0063D31F /* demographics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = demographics.json; sourceTree = "<group>"; };
+		E2208AEA1E4E8F170063D31F /* surveys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = surveys.json; sourceTree = "<group>"; };
+		E2208AEC1E4E97A60063D31F /* baseline-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "baseline-1.json"; sourceTree = "<group>"; };
+		E2208AEE1E4E9BD60063D31F /* baseline-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "baseline-2.json"; sourceTree = "<group>"; };
+		E2208AF01E4E9C410063D31F /* CTFRandomMultipleChoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFRandomMultipleChoice.swift; sourceTree = "<group>"; };
+		E2208AF21E4E9CF20063D31F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E2208AF41E4E9DBA0063D31F /* CTFMultipleChoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFMultipleChoice.swift; sourceTree = "<group>"; };
+		E2208AF61E4E9F000063D31F /* baseline-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "baseline-3.json"; sourceTree = "<group>"; };
+		E2208AF81E4EA5B50063D31F /* baseline-4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "baseline-4.json"; sourceTree = "<group>"; };
 		E2A89A421E4E4B60003EF895 /* CTFResultsProcessorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFResultsProcessorManager.swift; sourceTree = "<group>"; };
 		E2A9D54E1E3E9AE7000B4626 /* ConsentStepGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentStepGenerator.swift; sourceTree = "<group>"; };
 		E2A9D55C1E3EAE84000B4626 /* CTFScheduleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFScheduleItem.swift; sourceTree = "<group>"; };
@@ -124,6 +142,7 @@
 		E2021BE81E3E5979005B7E07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E2208AEA1E4E8F170063D31F /* surveys.json */,
 				E2A9D5661E3EBE8D000B4626 /* bart_25_cents_short_task.json */,
 				E2A9D5671E3EBE8D000B4626 /* bart_250_dollars_short_task.json */,
 				E2A9D5681E3EBE8D000B4626 /* dd_money_1_month_short_task.json */,
@@ -133,6 +152,11 @@
 				E2A9D5601E3EB4FD000B4626 /* activities.json */,
 				E2A9D5611E3EB4FD000B4626 /* go_no_go_stable_stimulus_short_task.json */,
 				E2A9D5621E3EB4FD000B4626 /* go_no_go_variable_stimulus_short_task.json */,
+				E2208AE81E4E8D4D0063D31F /* demographics.json */,
+				E2208AEC1E4E97A60063D31F /* baseline-1.json */,
+				E2208AEE1E4E9BD60063D31F /* baseline-2.json */,
+				E2208AF61E4E9F000063D31F /* baseline-3.json */,
+				E2208AF81E4EA5B50063D31F /* baseline-4.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -150,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				E2A9D54E1E3E9AE7000B4626 /* ConsentStepGenerator.swift */,
+				E2208AF01E4E9C410063D31F /* CTFRandomMultipleChoice.swift */,
+				E2208AF41E4E9DBA0063D31F /* CTFMultipleChoice.swift */,
 			);
 			name = RSTB;
 			sourceTree = "<group>";
@@ -197,6 +223,7 @@
 				E2A89A421E4E4B60003EF895 /* CTFResultsProcessorManager.swift */,
 				E2021BFD1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift */,
 				E2021BFF1E3E8F3D005B7E07 /* CTFAppState.swift */,
+				E2208AF21E4E9CF20063D31F /* Extensions.swift */,
 				E2A9D55B1E3EAE69000B4626 /* Study Management */,
 				E2A9D54D1E3E9AD7000B4626 /* RSTB */,
 				E2021BF21E3E66F8005B7E07 /* Storyboards */,
@@ -333,15 +360,21 @@
 				E2A9D5701E3EBE8D000B4626 /* dd_time_1_month_short_task.json in Resources */,
 				E2A9D5631E3EB4FD000B4626 /* activities.json in Resources */,
 				E2A9D56C1E3EBE8D000B4626 /* bart_25_cents_short_task.json in Resources */,
+				E2208AEB1E4E8F170063D31F /* surveys.json in Resources */,
 				E2A9D56F1E3EBE8D000B4626 /* dd_money_6_month_short_task.json in Resources */,
+				E2208AF91E4EA5B50063D31F /* baseline-4.json in Resources */,
 				E2C9AEC31E3AFC8400E9F871 /* LaunchScreen.storyboard in Resources */,
 				E2A9D5651E3EB4FD000B4626 /* go_no_go_variable_stimulus_short_task.json in Resources */,
+				E2208AE91E4E8D4D0063D31F /* demographics.json in Resources */,
 				E2C9AEC01E3AFC8400E9F871 /* Assets.xcassets in Resources */,
+				E2208AED1E4E97A60063D31F /* baseline-1.json in Resources */,
+				E2208AF71E4E9F000063D31F /* baseline-3.json in Resources */,
 				E2A9D5641E3EB4FD000B4626 /* go_no_go_stable_stimulus_short_task.json in Resources */,
 				E2A9D5711E3EBE8D000B4626 /* dd_time_6_month_short_task.json in Resources */,
 				E2A9D56D1E3EBE8D000B4626 /* bart_250_dollars_short_task.json in Resources */,
 				E2C9AEBE1E3AFC8400E9F871 /* Main.storyboard in Resources */,
 				E2A9D56E1E3EBE8D000B4626 /* dd_money_1_month_short_task.json in Resources */,
+				E2208AEF1E4E9BD60063D31F /* baseline-2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,11 +493,14 @@
 				E2021BF81E3E698E005B7E07 /* CTFSettingsViewController.swift in Sources */,
 				E2021BF61E3E6983005B7E07 /* CTFActivitiesViewController.swift in Sources */,
 				E2C9AEBB1E3AFC8400E9F871 /* ViewController.swift in Sources */,
+				E2208AF51E4E9DBA0063D31F /* CTFMultipleChoice.swift in Sources */,
 				E2C9AEDC1E3B021800E9F871 /* OhmageCredentialStore.swift in Sources */,
 				E2021C001E3E8F3D005B7E07 /* CTFAppState.swift in Sources */,
 				E2A9D55D1E3EAE84000B4626 /* CTFScheduleItem.swift in Sources */,
+				E2208AF31E4E9CF20063D31F /* Extensions.swift in Sources */,
 				E2C9AEB91E3AFC8400E9F871 /* AppDelegate.swift in Sources */,
 				E2A89A431E4E4B60003EF895 /* CTFResultsProcessorManager.swift in Sources */,
+				E2208AF11E4E9C410063D31F /* CTFRandomMultipleChoice.swift in Sources */,
 				E2021BFA1E3E69DA005B7E07 /* CTFOnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
