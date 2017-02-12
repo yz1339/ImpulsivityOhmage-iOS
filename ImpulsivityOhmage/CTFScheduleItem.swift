@@ -20,6 +20,7 @@ class CTFScheduleItem: Decodable {
     public let activity: JSON!
     public let resultTransforms: [RSRPResultTransform]
     
+    
     // MARK: - Deserialization
     
     required public init?(json: JSON) {

@@ -23,7 +23,7 @@ class CTFTaskBuilderManager: NSObject {
         randomMultipleChoice ? RSTBMultipleChoiceStepGenerator() : CTFMultipleChoice(),
         CTFRandomMultipleChoice(),
         
-        RSTBTimePickerStepGenerator(),
+        CTFTimePickerStepGenerator(),
         RSTBFormStepGenerator(),
         RSTBBooleanStepGenerator(),
         CTFBARTStepGenerator(),
@@ -42,6 +42,7 @@ class CTFTaskBuilderManager: NSObject {
     ]
     
     static let elementGeneratorServices: [RSTBElementGenerator] = [
+        CTFElementListWithBindingGenerator(),
         RSTBElementListGenerator(),
         RSTBElementFileGenerator(),
         RSTBElementSelectorGenerator()

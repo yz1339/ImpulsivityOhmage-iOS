@@ -16,6 +16,11 @@
 		E2021BFC1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2021BFB1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift */; };
 		E2021BFE1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2021BFD1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift */; };
 		E2021C001E3E8F3D005B7E07 /* CTFAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2021BFF1E3E8F3D005B7E07 /* CTFAppState.swift */; };
+		E208AB481E50E6F5003CE02B /* settings_test.json in Resources */ = {isa = PBXBuildFile; fileRef = E208AB471E50E6F5003CE02B /* settings_test.json */; };
+		E208AB4A1E50E766003CE02B /* morning_notification.json in Resources */ = {isa = PBXBuildFile; fileRef = E208AB491E50E766003CE02B /* morning_notification.json */; };
+		E208AB4C1E50E873003CE02B /* CTFTimePickerStepGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E208AB4B1E50E873003CE02B /* CTFTimePickerStepGenerator.swift */; };
+		E208AB4E1E50EBF7003CE02B /* CTFElementListWithBindingDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E208AB4D1E50EBF7003CE02B /* CTFElementListWithBindingDescriptor.swift */; };
+		E208AB501E50EDCC003CE02B /* CTFElementListWithBindingGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E208AB4F1E50EDCC003CE02B /* CTFElementListWithBindingGenerator.swift */; };
 		E218C8AD1E4FCE9800DBA342 /* CTFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218C8AC1E4FCE9800DBA342 /* CTFTabBarController.swift */; };
 		E218C8AF1E4FCFE400DBA342 /* CTFAppConfigPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218C8AE1E4FCFE400DBA342 /* CTFAppConfigPage.swift */; };
 		E218C8B11E4FD06D00DBA342 /* CTFAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218C8B01E4FD06D00DBA342 /* CTFAppConfig.swift */; };
@@ -80,6 +85,11 @@
 		E2021BFB1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFTaskBuilderManager.swift; sourceTree = "<group>"; };
 		E2021BFD1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpulsivityConsentSample.swift; sourceTree = "<group>"; };
 		E2021BFF1E3E8F3D005B7E07 /* CTFAppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFAppState.swift; sourceTree = "<group>"; };
+		E208AB471E50E6F5003CE02B /* settings_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = settings_test.json; sourceTree = "<group>"; };
+		E208AB491E50E766003CE02B /* morning_notification.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = morning_notification.json; sourceTree = "<group>"; };
+		E208AB4B1E50E873003CE02B /* CTFTimePickerStepGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFTimePickerStepGenerator.swift; sourceTree = "<group>"; };
+		E208AB4D1E50EBF7003CE02B /* CTFElementListWithBindingDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFElementListWithBindingDescriptor.swift; sourceTree = "<group>"; };
+		E208AB4F1E50EDCC003CE02B /* CTFElementListWithBindingGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFElementListWithBindingGenerator.swift; sourceTree = "<group>"; };
 		E218C8AC1E4FCE9800DBA342 /* CTFTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFTabBarController.swift; sourceTree = "<group>"; };
 		E218C8AE1E4FCFE400DBA342 /* CTFAppConfigPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFAppConfigPage.swift; sourceTree = "<group>"; };
 		E218C8B01E4FD06D00DBA342 /* CTFAppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFAppConfig.swift; sourceTree = "<group>"; };
@@ -162,6 +172,8 @@
 			children = (
 				E2208AEA1E4E8F170063D31F /* surveys.json */,
 				E218C8B21E4FD5CC00DBA342 /* appConfig.json */,
+				E208AB471E50E6F5003CE02B /* settings_test.json */,
+				E208AB491E50E766003CE02B /* morning_notification.json */,
 				E2A9D5661E3EBE8D000B4626 /* bart_25_cents_short_task.json */,
 				E2A9D5671E3EBE8D000B4626 /* bart_250_dollars_short_task.json */,
 				E2A9D5681E3EBE8D000B4626 /* dd_money_1_month_short_task.json */,
@@ -207,6 +219,9 @@
 				E2A9D54E1E3E9AE7000B4626 /* ConsentStepGenerator.swift */,
 				E2208AF01E4E9C410063D31F /* CTFRandomMultipleChoice.swift */,
 				E2208AF41E4E9DBA0063D31F /* CTFMultipleChoice.swift */,
+				E208AB4B1E50E873003CE02B /* CTFTimePickerStepGenerator.swift */,
+				E208AB4D1E50EBF7003CE02B /* CTFElementListWithBindingDescriptor.swift */,
+				E208AB4F1E50EDCC003CE02B /* CTFElementListWithBindingGenerator.swift */,
 			);
 			name = RSTB;
 			sourceTree = "<group>";
@@ -408,6 +423,8 @@
 				E2208AF71E4E9F000063D31F /* baseline-3.json in Resources */,
 				E2A9D5641E3EB4FD000B4626 /* go_no_go_stable_stimulus_short_task.json in Resources */,
 				E2A9D5711E3EBE8D000B4626 /* dd_time_6_month_short_task.json in Resources */,
+				E208AB4A1E50E766003CE02B /* morning_notification.json in Resources */,
+				E208AB481E50E6F5003CE02B /* settings_test.json in Resources */,
 				E2A9D56D1E3EBE8D000B4626 /* bart_250_dollars_short_task.json in Resources */,
 				E2C9AEBE1E3AFC8400E9F871 /* Main.storyboard in Resources */,
 				E2A9D56E1E3EBE8D000B4626 /* dd_money_1_month_short_task.json in Resources */,
@@ -535,12 +552,15 @@
 				E218C8B11E4FD06D00DBA342 /* CTFAppConfig.swift in Sources */,
 				E2208AFE1E4F83C90063D31F /* DemographicsResult.swift in Sources */,
 				E2208AF51E4E9DBA0063D31F /* CTFMultipleChoice.swift in Sources */,
+				E208AB501E50EDCC003CE02B /* CTFElementListWithBindingGenerator.swift in Sources */,
 				E2C9AEDC1E3B021800E9F871 /* OhmageCredentialStore.swift in Sources */,
 				E218C8B71E4FDEB400DBA342 /* CTFTaskViewController.swift in Sources */,
 				E2021C001E3E8F3D005B7E07 /* CTFAppState.swift in Sources */,
 				E2A9D55D1E3EAE84000B4626 /* CTFScheduleItem.swift in Sources */,
+				E208AB4C1E50E873003CE02B /* CTFTimePickerStepGenerator.swift in Sources */,
 				E2208AF31E4E9CF20063D31F /* Extensions.swift in Sources */,
 				E2C9AEB91E3AFC8400E9F871 /* AppDelegate.swift in Sources */,
+				E208AB4E1E50EBF7003CE02B /* CTFElementListWithBindingDescriptor.swift in Sources */,
 				E2208B021E4F8C360063D31F /* DemographicsResult+OMHDatapoint.swift in Sources */,
 				E218C8AF1E4FCFE400DBA342 /* CTFAppConfigPage.swift in Sources */,
 				E2A89A431E4E4B60003EF895 /* CTFResultsProcessorManager.swift in Sources */,

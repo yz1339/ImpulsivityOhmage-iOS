@@ -1,0 +1,20 @@
+{
+  "type": "settings",
+  "identifier": "impulsivitySettings",
+  "title": "Settings",
+  "guid": "impusivity-settings-123",
+  "items": [
+    {
+      "type": "recurring",
+      "identifier": "morning-notification",
+      "title": "Morning Notification",
+      "guid": "morning-notification-1",
+      "activity": {
+        "type": "elementFile",
+        "identifier": "morning_notification",
+        "elementFileName": "morning_notification"
+      }
+    },
+
+  ]
+}
