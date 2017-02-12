@@ -1,0 +1,134 @@
+{
+  "type": "surveys",
+  "identifier": "HTechSurveys",
+  "title": "Surveys",
+  "guid": "impusivity-activities-123",
+  "items": [
+    {
+      "type": "recurring",
+      "identifier": "demographics",
+      "title": "Demographics",
+      "guid": "demographics-1",
+      "activity": {
+        "type": "elementFile",
+        "identifier": "demographicsFile",
+        "elementFileName": "demographics"
+      }
+    },
+    {
+      "type": "recurring",
+      "identifier": "Baseline",
+      "title": "Baseline #1",
+      "guid": "Baseline-1",
+      "activity": {
+        "type": "elementFile",
+        "identifier": "baseline-1",
+        "elementFileName": "baseline-1"
+      }
+    },
+    {
+      "type": "recurring",
+      "identifier": "Baseline",
+      "title": "Baseline #2",
+      "guid": "Baseline-2",
+      "activity": {
+        "type": "elementFile",
+        "identifier": "baseline-2",
+        "elementFileName": "baseline-2"
+      }
+    },
+    {
+      "type": "recurring",
+      "identifier": "Baseline",
+      "title": "Baseline #3",
+      "guid": "Baseline-3",
+      "activity": {
+        "type": "elementFile",
+        "identifier": "baseline-3",
+        "elementFileName": "baseline-3"
+      }
+    },
+    {
+      "type": "recurring",
+      "identifier": "Baseline",
+      "title": "Baseline #4",
+      "guid": "Baseline-4",
+      "activity": {
+        "type": "elementFile",
+        "identifier": "baseline-4",
+        "elementFileName": "baseline-4"
+      }
+    },
+    {
+      "type": "recurring",
+      "identifier": "Baseline",
+      "title": "Baseline #5",
+      "guid": "Baseline-5",
+      "activity": {
+        "type": "elementFile",
+        "identifier": "baseline-5",
+        "elementFileName": "baseline-5"
+      },
+      "resultTransforms": [
+        {
+          "transform": "Demographics",
+          "inputMapping": [
+            {"stepIdentifier":"gender", "parameter":"GenderChoiceResult"},
+            {"stepIdentifier":"age", "parameter":"AgeIntegerResult"},
+            {"stepIdentifier":"zip_code", "parameter":"ZipTextResult"},
+            {"stepIdentifier":"education", "parameter":"EducationChoiceResult"},
+            {"stepIdentifier":"employment_income", "parameter":"EmploymentChoiceResult"}
+          ]
+        }
+      ]
+    },
+    {
+      "type": "recurring",
+      "identifier": "Baseline",
+      "title": "Baseline #6",
+      "guid": "Baseline-6",
+      "activity": {
+        "type": "elementFile",
+        "identifier": "baseline-6",
+        "elementFileName": "baseline-6"
+      },
+      "resultTransforms": [
+        {
+          "transform": "Demographics",
+          "inputMapping": [
+            {"stepIdentifier":"gender", "parameter":"GenderChoiceResult"},
+            {"stepIdentifier":"age", "parameter":"AgeIntegerResult"},
+            {"stepIdentifier":"zip_code", "parameter":"ZipTextResult"},
+            {"stepIdentifier":"education", "parameter":"EducationChoiceResult"},
+            {"stepIdentifier":"employment_income", "parameter":"EmploymentChoiceResult"}
+          ]
+        },
+        {
+          "transform": "DelayDiscountingRaw",
+          "inputMapping": [
+            {"stepIdentifier":"dd_money_1_month", "parameter":"DelayDiscountingResult"}
+          ]
+        }
+      ]
+    },
+    {
+      "type": "recurring",
+      "identifier": "bart250",
+      "title": "BART $250",
+      "guid": "bart250-1",
+      "activity": {
+        "type": "elementFile",
+        "identifier": "bart_250_dollars_short_task",
+        "elementFileName": "bart_250_dollars_short_task"
+      },
+      "resultTransforms": [
+        {
+          "transform": "GoNoGoSummary",
+          "inputMapping": [
+            {"stepIdentifier":"bart_250_dollars_active_task", "parameter":"BARTResult"}
+          ]
+        }
+      ]
+    },
+  ]
+}

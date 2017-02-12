@@ -18,7 +18,7 @@ class CTFScheduleItem: Decodable {
     public let guid: String!
     
     public let activity: JSON!
-    public let resultTransforms: [RSRPResultTransform]!
+    public let resultTransforms: [RSRPResultTransform]
     
     // MARK: - Deserialization
     
@@ -28,8 +28,7 @@ class CTFScheduleItem: Decodable {
             let identifier: String = "identifier" <~~ json,
             let title: String = "title" <~~ json,
             let guid: String = "guid" <~~ json,
-            let activity: JSON = "activity" <~~ json,
-            let resultTransforms: [RSRPResultTransform] = "resultTransforms" <~~ json else {
+            let activity: JSON = "activity" <~~ json else {
                 return nil
         }
         self.type = type
@@ -38,7 +37,18 @@ class CTFScheduleItem: Decodable {
         self.guid = guid
         
         self.activity = activity
-        self.resultTransforms = resultTransforms
+        self.resultTransforms = {
+            guard let resultTransforms: [JSON] = "resultTransforms" <~~ json else {
+                return []
+            }
+            
+            return resultTransforms.flatMap({ (transform) -> RSRPResultTransform? in
+                return RSRPResultTransform(json: transform)
+            })
+        }()
+        
+        
+        
         
     }
 

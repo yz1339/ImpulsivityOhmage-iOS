@@ -1,0 +1,49 @@
+{
+  "type": "elementList",
+  "identifier": "demographics",
+  "elements": [
+    {
+      "identifier": "introduction",
+      "type": "instruction",
+      "title": "Baseline Survey",
+      "text": "Thanks for participating!"
+    },
+    {
+      "type": "elementFile",
+      "identifier": "demographicsFile",
+      "elementFileName": "demographics"
+    },
+    {
+      "identifier": "numbers",
+      "type": "randomMultipleChoiceText",
+      "text": "What number(s) am I thinking of?",
+      "items": [
+        {
+          "prompt": "1",
+          "value": "1"
+        },
+        {
+          "prompt": "2",
+          "value": "2"
+        },
+        {
+          "prompt": "3",
+          "value": "3"
+        },
+        {
+          "prompt": "4",
+          "value": "4"
+        },
+        {
+          "prompt": "5",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "type": "elementFile",
+      "identifier": "DelayDiscounting file",
+      "elementFileName": "dd_money_1_month_short_task"
+    }
+  ]
+}

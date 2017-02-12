@@ -11,15 +11,13 @@ import Gloss
 import ResearchKit
 import ResearchSuiteTaskBuilder
 
-class CTFActivitiesViewController: UITableViewController, ORKTaskViewControllerDelegate {
+class CTFActivitiesViewController: UITableViewController {
 
     var activityFileName: String?
     
     var schedule: CTFSchedule?
     var visibleItems: [CTFScheduleItem]?
-    
-    var taskFinishedHandler: ((ORKTaskViewController, ORKTaskViewControllerFinishReason, Error?) -> ())?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -103,14 +101,6 @@ class CTFActivitiesViewController: UITableViewController, ORKTaskViewControllerD
         return 1
     }
     
-    func taskViewController(_ taskViewController: ORKTaskViewController, didFinishWith reason: ORKTaskViewControllerFinishReason, error: Error?) {
-        
-        taskFinishedHandler?(taskViewController, reason, error)
-        
-        
-    }
-    
-    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
@@ -120,12 +110,11 @@ class CTFActivitiesViewController: UITableViewController, ORKTaskViewControllerD
                 return
         }
         
+        
+        
         let task = ORKOrderedTask(identifier: item.identifier, steps: steps)
         
-        let taskViewController = ORKTaskViewController(task: task, taskRun: nil)
-        taskViewController.delegate = self
-        
-        self.taskFinishedHandler = { [weak self] (taskViewController, reason, error) in
+        let taskFinishedHandler: ((ORKTaskViewController, ORKTaskViewControllerFinishReason, Error?) -> ()) = { [weak self] (taskViewController, reason, error) in
             
             if reason == ORKTaskViewControllerFinishReason.completed {
                 
@@ -136,12 +125,11 @@ class CTFActivitiesViewController: UITableViewController, ORKTaskViewControllerD
                 
             }
             
-            self?.dismiss(animated: true, completion: { 
-                
-                
-            })
+            self?.dismiss(animated: true, completion: nil)
             
         }
+        
+        let taskViewController = CTFTaskViewController(task: task, taskFinishedHandler: taskFinishedHandler)
         
         
         present(taskViewController, animated: true, completion: nil)

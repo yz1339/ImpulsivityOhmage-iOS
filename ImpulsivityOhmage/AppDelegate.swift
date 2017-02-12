@@ -9,11 +9,21 @@
 
 import UIKit
 import OhmageOMHSDK
+import Gloss
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    let appConfig: CTFAppConfig = {
+        let plist: NSDictionary = NSDictionary(contentsOfFile: Bundle.main.path(forResource: "Info", ofType: "plist")!)!
+        
+        let appConfigFileName = plist["CTFAppConfigFileName"] as! String
+        let json = CTFTaskBuilderManager.getJson(forFilename: appConfigFileName) as! JSON
+        let appConfig: CTFAppConfig = CTFAppConfig(json: json)!
+        return appConfig
+    }()
     
     var ohmageManager: OhmageOMHManager! = {
         let omhClientDetails = NSDictionary(contentsOfFile: Bundle.main.path(forResource: "OMHClient", ofType: "plist")!)
@@ -44,9 +54,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         if CTFAppState.sharedInstance.isSignedInOrSkipped {
+            
             let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = mainStoryboard.instantiateInitialViewController()
+            let vc = mainStoryboard.instantiateInitialViewController() as! CTFTabBarController
+            vc.appConfig = self.appConfig
+            
             window.rootViewController = vc
+            
+//            //if signed in and not skipped, check to see if we have consented
+//            if CTFAppState.sharedInstance.isSignedIn &&
+//                !CTFAppState.sharedInstance.skipped &&
+//                !CTFAppState.sharedInstance.consented {
+//                
+//                
+//                
+//            }
+//            else {
+//                let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//                let vc = mainStoryboard.instantiateInitialViewController() as! CTFTabBarController
+//                vc.appConfig = self.appConfig
+//                
+//                window.rootViewController = vc
+//            }
+            
+            
         }
         else {
             let onboardingStoryboard = UIStoryboard(name: "Onboarding", bundle: nil)

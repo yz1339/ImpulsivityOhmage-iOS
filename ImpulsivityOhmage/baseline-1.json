@@ -1,0 +1,17 @@
+{
+  "type": "elementList",
+  "identifier": "demographics",
+  "elements": [
+    {
+      "identifier": "introduction",
+      "type": "instruction",
+      "title": "Baseline Survey",
+      "text": "Thanks for participating!"
+    },
+    {
+      "type": "elementFile",
+      "identifier": "demographicsFile",
+      "elementFileName": "demographics"
+    }
+  ]
+}
