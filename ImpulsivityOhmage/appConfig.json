@@ -1,11 +1,6 @@
 {
   "pages" : [
     {
-      "title": "Settings",
-      "shortTitle": "Settings",
-      "activityFileName": "settings_test"
-    },
-    {
       "title": "H-Tech Surveys",
       "shortTitle": "H-Tech",
       "activityFileName": "surveys"
@@ -14,6 +9,11 @@
       "title": "Impulsivity Activities",
       "shortTitle": "Impulsivity",
       "activityFileName": "activities"
+    },
+    {
+      "title": "Settings",
+      "shortTitle": "Settings",
+      "activityFileName": "settings_test"
     }
   ]
 }
