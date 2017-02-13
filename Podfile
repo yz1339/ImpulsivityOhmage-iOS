@@ -20,6 +20,7 @@ target 'ImpulsivityOhmage' do
   pod "ResearchKit", '~> 1.3'
   pod "ResearchSuiteTaskBuilder"
   pod "ResearchSuiteResultsProcessor"
+  pod 'ReSwift'
 
   target 'ImpulsivityOhmageTests' do
     inherit! :search_paths
