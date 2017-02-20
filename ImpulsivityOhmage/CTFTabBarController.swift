@@ -88,7 +88,7 @@ class CTFTabBarController: UITabBarController, StoreSubscriber {
             
             self?.dismiss(animated: true, completion: {
                 self?.presentedActivity = nil
-                let action = CompleteActivityAction(uuid: uuid)
+                let action = CompleteActivityAction(uuid: uuid, activityRun: activityRun, taskResult: taskViewController.result)
                 CTFReduxStoreManager.mainStore.dispatch(action)
             })
             

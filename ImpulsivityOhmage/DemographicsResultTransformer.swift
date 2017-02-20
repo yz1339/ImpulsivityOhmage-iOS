@@ -60,7 +60,7 @@ class DemographicsResultTransformer: RSRPFrontEndTransformer {
         }()
         
         let employment: [String]? = {
-            guard let stepResult = parameters["EducationChoiceResult"],
+            guard let stepResult = parameters["EmploymentChoiceResult"],
                 let result = stepResult.firstResult as? ORKChoiceQuestionResult,
                 let employmentChoices = result.choiceAnswers as? [String] else {
                     return nil
@@ -76,7 +76,7 @@ class DemographicsResultTransformer: RSRPFrontEndTransformer {
             employment: employment)
         
         demographics.startDate = parameters["GenderChoiceResult"]?.startDate ?? Date()
-        demographics.endDate = parameters["EducationChoiceResult"]?.endDate ?? Date()
+        demographics.endDate = parameters["EmploymentChoiceResult"]?.endDate ?? Date()
         
         return demographics
         

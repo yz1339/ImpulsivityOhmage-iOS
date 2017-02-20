@@ -8,9 +8,11 @@
 
 import UIKit
 import ReSwift
+import ResearchKit
 
 struct CTFReduxStore: StateType {
     var activityQueue: [(UUID, CTFActivityRun)] = []
+    var resultsQueue: [(UUID, CTFActivityRun, ORKTaskResult)] = []
 }
 
 struct QueueActivityAction: Action {
@@ -19,6 +21,12 @@ struct QueueActivityAction: Action {
 }
 
 struct CompleteActivityAction: Action {
+    let uuid: UUID
+    let activityRun: CTFActivityRun
+    let taskResult: ORKTaskResult?
+}
+
+struct ResultsProcessedAction: Action {
     let uuid: UUID
 }
 
@@ -44,6 +52,32 @@ struct ActivityQueueReducer: Reducer {
     
 }
 
+struct ResultsQueueReducer: Reducer {
+    
+    func handleAction(action: Action, state: CTFReduxStore?) -> CTFReduxStore {
+        var state = state ?? CTFReduxStore()
+        
+        switch action {
+            
+        case let completeActivityAction as CompleteActivityAction:
+            if let taskResult = completeActivityAction.taskResult {
+                state.resultsQueue = state.resultsQueue + [(completeActivityAction.uuid, completeActivityAction.activityRun, taskResult)]
+            }
+            
+        case let resultsProcessedAction as ResultsProcessedAction:
+            state.resultsQueue = state.resultsQueue.filter({ (uuid: UUID, _, _) -> Bool in
+                return uuid != resultsProcessedAction.uuid
+            })
+            
+        default:
+            break
+        }
+        
+        return state
+    }
+    
+}
+
 class CTFReduxStoreManager: NSObject {
     
     static let sharedInstance = CTFReduxStoreManager()
@@ -53,8 +87,9 @@ class CTFReduxStoreManager: NSObject {
     
     private override init() {
         
+        let reducer = CombinedReducer([ActivityQueueReducer(), ResultsQueueReducer()])
         self.store = Store<CTFReduxStore>(
-            reducer: ActivityQueueReducer(),
+            reducer: reducer,
             state: nil
         )
         
@@ -63,5 +98,3 @@ class CTFReduxStoreManager: NSObject {
     }
     
 }
-
-
