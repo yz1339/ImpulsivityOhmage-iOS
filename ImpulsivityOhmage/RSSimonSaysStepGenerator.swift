@@ -29,7 +29,7 @@ class RSSimonSaysStepGenerator: RSTBBaseStepGenerator {
             return nil
         }
         
-        let step = ORKInstructionStep(identifier: element.identifier)
+        let step = RSSimonSaysStep(identifier: element.identifier)
         step.title = element.title
         step.text = element.text
         step.isOptional = element.optional
