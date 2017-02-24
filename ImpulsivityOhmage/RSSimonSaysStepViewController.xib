@@ -18,6 +18,7 @@
                 <outlet property="greenView" destination="M6P-2T-EZ6" id="4q6-8j-RNq"/>
                 <outlet property="redFlashView" destination="7bR-kT-hAb" id="Jrm-ld-VlJ"/>
                 <outlet property="redView" destination="Ips-6O-Pka" id="w8k-RB-CgB"/>
+                <outlet property="simonSaysContainerView" destination="hOn-mc-bOg" id="WCS-D1-KoW"/>
                 <outlet property="skipButton" destination="JHo-4c-8Ej" id="QWi-GR-ilb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="yellowFlashView" destination="XdR-Zp-cLf" id="Ed4-XK-S7s"/>

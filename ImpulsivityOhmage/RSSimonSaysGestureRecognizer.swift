@@ -1,5 +1,5 @@
 //
-//  RSSSimonSaysGestureRecognizer.swift
+//  RSSimonSaysGestureRecognizer.swift
 //  ImpulsivityOhmage
 //
 //  Created by James Kizer on 2/24/17.
@@ -9,7 +9,7 @@
 import UIKit
 import UIKit.UIGestureRecognizerSubclass
 
-class RSSSimonSaysGestureRecognizer: UIGestureRecognizer {
+class RSSimonSaysGestureRecognizer: UIGestureRecognizer {
     
     let onBegin: ()->Void
     let onEnd: ()->Void

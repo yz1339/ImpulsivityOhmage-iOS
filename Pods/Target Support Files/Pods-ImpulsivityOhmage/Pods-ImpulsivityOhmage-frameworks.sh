@@ -93,6 +93,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/ResearchSuiteResultsProcessor/ResearchSuiteResultsProcessor.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ResearchSuiteTaskBuilder/ResearchSuiteTaskBuilder.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SecureQueue/SecureQueue.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/TGSineWaveToneGenerator/TGSineWaveToneGenerator.framework"
   install_framework "$BUILT_PRODUCTS_DIR/sdlrkx/sdlrkx.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -105,5 +106,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/ResearchSuiteResultsProcessor/ResearchSuiteResultsProcessor.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ResearchSuiteTaskBuilder/ResearchSuiteTaskBuilder.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SecureQueue/SecureQueue.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/TGSineWaveToneGenerator/TGSineWaveToneGenerator.framework"
   install_framework "$BUILT_PRODUCTS_DIR/sdlrkx/sdlrkx.framework"
 fi

@@ -22,6 +22,8 @@ target 'ImpulsivityOhmage' do
   pod "ResearchSuiteResultsProcessor"
   pod 'ReSwift'
 
+  pod "TGSineWaveToneGenerator"
+
   target 'ImpulsivityOhmageTests' do
     inherit! :search_paths
     # Pods for testing

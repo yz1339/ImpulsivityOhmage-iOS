@@ -1,0 +1,6 @@
+framework module TGSineWaveToneGenerator {
+  umbrella header "TGSineWaveToneGenerator-umbrella.h"
+
+  export *
+  module * { export * }
+}

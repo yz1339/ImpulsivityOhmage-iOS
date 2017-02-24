@@ -8,10 +8,15 @@
 
 import UIKit
 
+public struct RSSimonSaysResponse {
+    let reponse: RSSimonSaysStimulus
+    let reponseTime: TimeInterval
+}
+
 public struct RSSimonSaysTrialResult {
     
     let trial: RSSimonSaysTrial
-    let responseSequence: [RSSimonSaysStimulus]
-    let responseTimes: [TimeInterval]
+    let correct: Bool
+    let responseSequence: [RSSimonSaysResponse]
 
 }
