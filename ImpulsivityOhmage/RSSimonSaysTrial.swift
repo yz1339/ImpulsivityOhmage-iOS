@@ -8,11 +8,27 @@
 
 import UIKit
 
-public enum RSSimonSaysStimulus {
+public enum RSSimonSaysStimulus: UInt32 {
     case red
     case blue
     case yellow
     case green
+    
+    private static let _count: RSSimonSaysStimulus.RawValue = {
+        // find the maximum enum value
+        var maxValue: UInt32 = 0
+        while let _ = RSSimonSaysStimulus(rawValue: maxValue) {
+            maxValue += 1
+        }
+        return maxValue
+    }()
+    
+    static func randomStimulus() -> RSSimonSaysStimulus {
+        // pick and return a new value
+        let rand = arc4random_uniform(_count)
+        return RSSimonSaysStimulus(rawValue: rand)!
+    }
+    
 }
 
 public struct RSSimonSaysTrial {
