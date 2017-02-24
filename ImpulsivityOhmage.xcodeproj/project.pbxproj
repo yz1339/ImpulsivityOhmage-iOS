@@ -16,6 +16,16 @@
 		E2021BFC1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2021BFB1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift */; };
 		E2021BFE1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2021BFD1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift */; };
 		E2021C001E3E8F3D005B7E07 /* CTFAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2021BFF1E3E8F3D005B7E07 /* CTFAppState.swift */; };
+		E208AB481E50E6F5003CE02B /* settings_test.json in Resources */ = {isa = PBXBuildFile; fileRef = E208AB471E50E6F5003CE02B /* settings_test.json */; };
+		E208AB4A1E50E766003CE02B /* morning_notification.json in Resources */ = {isa = PBXBuildFile; fileRef = E208AB491E50E766003CE02B /* morning_notification.json */; };
+		E208AB4C1E50E873003CE02B /* CTFTimePickerStepGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E208AB4B1E50E873003CE02B /* CTFTimePickerStepGenerator.swift */; };
+		E208AB4E1E50EBF7003CE02B /* CTFElementListWithBindingDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E208AB4D1E50EBF7003CE02B /* CTFElementListWithBindingDescriptor.swift */; };
+		E208AB501E50EDCC003CE02B /* CTFElementListWithBindingGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E208AB4F1E50EDCC003CE02B /* CTFElementListWithBindingGenerator.swift */; };
+		E208AB531E50FBE5003CE02B /* CTFActionDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E208AB521E50FBE5003CE02B /* CTFActionDescriptor.swift */; };
+		E208AB551E50FCCA003CE02B /* CTFActionProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E208AB541E50FCCA003CE02B /* CTFActionProcessor.swift */; };
+		E208AB571E50FCF6003CE02B /* CTFActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E208AB561E50FCF6003CE02B /* CTFActionCreator.swift */; };
+		E208AB591E50FEF5003CE02B /* CTFReduxStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E208AB581E50FEF5003CE02B /* CTFReduxStoreManager.swift */; };
+		E208AB5B1E510096003CE02B /* CTFActivityRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = E208AB5A1E510096003CE02B /* CTFActivityRun.swift */; };
 		E218C8AD1E4FCE9800DBA342 /* CTFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218C8AC1E4FCE9800DBA342 /* CTFTabBarController.swift */; };
 		E218C8AF1E4FCFE400DBA342 /* CTFAppConfigPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218C8AE1E4FCFE400DBA342 /* CTFAppConfigPage.swift */; };
 		E218C8B11E4FD06D00DBA342 /* CTFAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218C8B01E4FD06D00DBA342 /* CTFAppConfig.swift */; };
@@ -23,18 +33,14 @@
 		E218C8B71E4FDEB400DBA342 /* CTFTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218C8B61E4FDEB300DBA342 /* CTFTaskViewController.swift */; };
 		E2208AE91E4E8D4D0063D31F /* demographics.json in Resources */ = {isa = PBXBuildFile; fileRef = E2208AE81E4E8D4D0063D31F /* demographics.json */; };
 		E2208AEB1E4E8F170063D31F /* surveys.json in Resources */ = {isa = PBXBuildFile; fileRef = E2208AEA1E4E8F170063D31F /* surveys.json */; };
-		E2208AED1E4E97A60063D31F /* baseline-1.json in Resources */ = {isa = PBXBuildFile; fileRef = E2208AEC1E4E97A60063D31F /* baseline-1.json */; };
-		E2208AEF1E4E9BD60063D31F /* baseline-2.json in Resources */ = {isa = PBXBuildFile; fileRef = E2208AEE1E4E9BD60063D31F /* baseline-2.json */; };
 		E2208AF11E4E9C410063D31F /* CTFRandomMultipleChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2208AF01E4E9C410063D31F /* CTFRandomMultipleChoice.swift */; };
 		E2208AF31E4E9CF20063D31F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2208AF21E4E9CF20063D31F /* Extensions.swift */; };
 		E2208AF51E4E9DBA0063D31F /* CTFMultipleChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2208AF41E4E9DBA0063D31F /* CTFMultipleChoice.swift */; };
-		E2208AF71E4E9F000063D31F /* baseline-3.json in Resources */ = {isa = PBXBuildFile; fileRef = E2208AF61E4E9F000063D31F /* baseline-3.json */; };
-		E2208AF91E4EA5B50063D31F /* baseline-4.json in Resources */ = {isa = PBXBuildFile; fileRef = E2208AF81E4EA5B50063D31F /* baseline-4.json */; };
-		E2208AFB1E4F837D0063D31F /* baseline-5.json in Resources */ = {isa = PBXBuildFile; fileRef = E2208AFA1E4F837D0063D31F /* baseline-5.json */; };
 		E2208AFE1E4F83C90063D31F /* DemographicsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2208AFD1E4F83C90063D31F /* DemographicsResult.swift */; };
 		E2208B001E4F83E50063D31F /* DemographicsResultTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2208AFF1E4F83E50063D31F /* DemographicsResultTransformer.swift */; };
 		E2208B021E4F8C360063D31F /* DemographicsResult+OMHDatapoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2208B011E4F8C360063D31F /* DemographicsResult+OMHDatapoint.swift */; };
-		E2208B041E4F95CC0063D31F /* baseline-6.json in Resources */ = {isa = PBXBuildFile; fileRef = E2208B031E4F95CC0063D31F /* baseline-6.json */; };
+		E2266F751E521F1700169E85 /* baseline-DD.json in Resources */ = {isa = PBXBuildFile; fileRef = E2266F731E521F1700169E85 /* baseline-DD.json */; };
+		E2266F761E521F1700169E85 /* baseline.json in Resources */ = {isa = PBXBuildFile; fileRef = E2266F741E521F1700169E85 /* baseline.json */; };
 		E2A89A431E4E4B60003EF895 /* CTFResultsProcessorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A89A421E4E4B60003EF895 /* CTFResultsProcessorManager.swift */; };
 		E2A9D54F1E3E9AE7000B4626 /* ConsentStepGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D54E1E3E9AE7000B4626 /* ConsentStepGenerator.swift */; };
 		E2A9D55D1E3EAE84000B4626 /* CTFScheduleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D55C1E3EAE84000B4626 /* CTFScheduleItem.swift */; };
@@ -80,6 +86,16 @@
 		E2021BFB1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFTaskBuilderManager.swift; sourceTree = "<group>"; };
 		E2021BFD1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpulsivityConsentSample.swift; sourceTree = "<group>"; };
 		E2021BFF1E3E8F3D005B7E07 /* CTFAppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFAppState.swift; sourceTree = "<group>"; };
+		E208AB471E50E6F5003CE02B /* settings_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = settings_test.json; sourceTree = "<group>"; };
+		E208AB491E50E766003CE02B /* morning_notification.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = morning_notification.json; sourceTree = "<group>"; };
+		E208AB4B1E50E873003CE02B /* CTFTimePickerStepGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFTimePickerStepGenerator.swift; sourceTree = "<group>"; };
+		E208AB4D1E50EBF7003CE02B /* CTFElementListWithBindingDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFElementListWithBindingDescriptor.swift; sourceTree = "<group>"; };
+		E208AB4F1E50EDCC003CE02B /* CTFElementListWithBindingGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFElementListWithBindingGenerator.swift; sourceTree = "<group>"; };
+		E208AB521E50FBE5003CE02B /* CTFActionDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFActionDescriptor.swift; sourceTree = "<group>"; };
+		E208AB541E50FCCA003CE02B /* CTFActionProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFActionProcessor.swift; sourceTree = "<group>"; };
+		E208AB561E50FCF6003CE02B /* CTFActionCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFActionCreator.swift; sourceTree = "<group>"; };
+		E208AB581E50FEF5003CE02B /* CTFReduxStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFReduxStoreManager.swift; sourceTree = "<group>"; };
+		E208AB5A1E510096003CE02B /* CTFActivityRun.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFActivityRun.swift; sourceTree = "<group>"; };
 		E218C8AC1E4FCE9800DBA342 /* CTFTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFTabBarController.swift; sourceTree = "<group>"; };
 		E218C8AE1E4FCFE400DBA342 /* CTFAppConfigPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFAppConfigPage.swift; sourceTree = "<group>"; };
 		E218C8B01E4FD06D00DBA342 /* CTFAppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFAppConfig.swift; sourceTree = "<group>"; };
@@ -87,18 +103,14 @@
 		E218C8B61E4FDEB300DBA342 /* CTFTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFTaskViewController.swift; sourceTree = "<group>"; };
 		E2208AE81E4E8D4D0063D31F /* demographics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = demographics.json; sourceTree = "<group>"; };
 		E2208AEA1E4E8F170063D31F /* surveys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = surveys.json; sourceTree = "<group>"; };
-		E2208AEC1E4E97A60063D31F /* baseline-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "baseline-1.json"; sourceTree = "<group>"; };
-		E2208AEE1E4E9BD60063D31F /* baseline-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "baseline-2.json"; sourceTree = "<group>"; };
 		E2208AF01E4E9C410063D31F /* CTFRandomMultipleChoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFRandomMultipleChoice.swift; sourceTree = "<group>"; };
 		E2208AF21E4E9CF20063D31F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E2208AF41E4E9DBA0063D31F /* CTFMultipleChoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFMultipleChoice.swift; sourceTree = "<group>"; };
-		E2208AF61E4E9F000063D31F /* baseline-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "baseline-3.json"; sourceTree = "<group>"; };
-		E2208AF81E4EA5B50063D31F /* baseline-4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "baseline-4.json"; sourceTree = "<group>"; };
-		E2208AFA1E4F837D0063D31F /* baseline-5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "baseline-5.json"; sourceTree = "<group>"; };
 		E2208AFD1E4F83C90063D31F /* DemographicsResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemographicsResult.swift; sourceTree = "<group>"; };
 		E2208AFF1E4F83E50063D31F /* DemographicsResultTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemographicsResultTransformer.swift; sourceTree = "<group>"; };
 		E2208B011E4F8C360063D31F /* DemographicsResult+OMHDatapoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DemographicsResult+OMHDatapoint.swift"; sourceTree = "<group>"; };
-		E2208B031E4F95CC0063D31F /* baseline-6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "baseline-6.json"; sourceTree = "<group>"; };
+		E2266F731E521F1700169E85 /* baseline-DD.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "baseline-DD.json"; sourceTree = "<group>"; };
+		E2266F741E521F1700169E85 /* baseline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = baseline.json; sourceTree = "<group>"; };
 		E2A89A421E4E4B60003EF895 /* CTFResultsProcessorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFResultsProcessorManager.swift; sourceTree = "<group>"; };
 		E2A9D54E1E3E9AE7000B4626 /* ConsentStepGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentStepGenerator.swift; sourceTree = "<group>"; };
 		E2A9D55C1E3EAE84000B4626 /* CTFScheduleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFScheduleItem.swift; sourceTree = "<group>"; };
@@ -162,6 +174,8 @@
 			children = (
 				E2208AEA1E4E8F170063D31F /* surveys.json */,
 				E218C8B21E4FD5CC00DBA342 /* appConfig.json */,
+				E208AB471E50E6F5003CE02B /* settings_test.json */,
+				E208AB491E50E766003CE02B /* morning_notification.json */,
 				E2A9D5661E3EBE8D000B4626 /* bart_25_cents_short_task.json */,
 				E2A9D5671E3EBE8D000B4626 /* bart_250_dollars_short_task.json */,
 				E2A9D5681E3EBE8D000B4626 /* dd_money_1_month_short_task.json */,
@@ -172,12 +186,8 @@
 				E2A9D5611E3EB4FD000B4626 /* go_no_go_stable_stimulus_short_task.json */,
 				E2A9D5621E3EB4FD000B4626 /* go_no_go_variable_stimulus_short_task.json */,
 				E2208AE81E4E8D4D0063D31F /* demographics.json */,
-				E2208AEC1E4E97A60063D31F /* baseline-1.json */,
-				E2208AEE1E4E9BD60063D31F /* baseline-2.json */,
-				E2208AF61E4E9F000063D31F /* baseline-3.json */,
-				E2208AF81E4EA5B50063D31F /* baseline-4.json */,
-				E2208AFA1E4F837D0063D31F /* baseline-5.json */,
-				E2208B031E4F95CC0063D31F /* baseline-6.json */,
+				E2266F731E521F1700169E85 /* baseline-DD.json */,
+				E2266F741E521F1700169E85 /* baseline.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -189,6 +199,18 @@
 				E2021BF31E3E68AC005B7E07 /* Onboarding.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		E208AB511E50FB61003CE02B /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				E208AB581E50FEF5003CE02B /* CTFReduxStoreManager.swift */,
+				E208AB521E50FBE5003CE02B /* CTFActionDescriptor.swift */,
+				E208AB561E50FCF6003CE02B /* CTFActionCreator.swift */,
+				E208AB541E50FCCA003CE02B /* CTFActionProcessor.swift */,
+				E208AB5A1E510096003CE02B /* CTFActivityRun.swift */,
+			);
+			name = Actions;
 			sourceTree = "<group>";
 		};
 		E2208AFC1E4F838D0063D31F /* RSRP */ = {
@@ -207,6 +229,9 @@
 				E2A9D54E1E3E9AE7000B4626 /* ConsentStepGenerator.swift */,
 				E2208AF01E4E9C410063D31F /* CTFRandomMultipleChoice.swift */,
 				E2208AF41E4E9DBA0063D31F /* CTFMultipleChoice.swift */,
+				E208AB4B1E50E873003CE02B /* CTFTimePickerStepGenerator.swift */,
+				E208AB4D1E50EBF7003CE02B /* CTFElementListWithBindingDescriptor.swift */,
+				E208AB4F1E50EDCC003CE02B /* CTFElementListWithBindingGenerator.swift */,
 			);
 			name = RSTB;
 			sourceTree = "<group>";
@@ -258,6 +283,7 @@
 				E2021BFD1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift */,
 				E2021BFF1E3E8F3D005B7E07 /* CTFAppState.swift */,
 				E2208AF21E4E9CF20063D31F /* Extensions.swift */,
+				E208AB511E50FB61003CE02B /* Actions */,
 				E2A9D55B1E3EAE69000B4626 /* Study Management */,
 				E2A9D54D1E3E9AD7000B4626 /* RSTB */,
 				E2208AFC1E4F838D0063D31F /* RSRP */,
@@ -394,25 +420,23 @@
 				E2021BF41E3E68AC005B7E07 /* Onboarding.storyboard in Resources */,
 				E2A9D5701E3EBE8D000B4626 /* dd_time_1_month_short_task.json in Resources */,
 				E2A9D5631E3EB4FD000B4626 /* activities.json in Resources */,
+				E2266F761E521F1700169E85 /* baseline.json in Resources */,
 				E2A9D56C1E3EBE8D000B4626 /* bart_25_cents_short_task.json in Resources */,
 				E2208AEB1E4E8F170063D31F /* surveys.json in Resources */,
 				E2A9D56F1E3EBE8D000B4626 /* dd_money_6_month_short_task.json in Resources */,
-				E2208AF91E4EA5B50063D31F /* baseline-4.json in Resources */,
-				E2208AFB1E4F837D0063D31F /* baseline-5.json in Resources */,
 				E2C9AEC31E3AFC8400E9F871 /* LaunchScreen.storyboard in Resources */,
 				E2A9D5651E3EB4FD000B4626 /* go_no_go_variable_stimulus_short_task.json in Resources */,
 				E2208AE91E4E8D4D0063D31F /* demographics.json in Resources */,
 				E2C9AEC01E3AFC8400E9F871 /* Assets.xcassets in Resources */,
 				E218C8B31E4FD5CC00DBA342 /* appConfig.json in Resources */,
-				E2208AED1E4E97A60063D31F /* baseline-1.json in Resources */,
-				E2208AF71E4E9F000063D31F /* baseline-3.json in Resources */,
+				E2266F751E521F1700169E85 /* baseline-DD.json in Resources */,
 				E2A9D5641E3EB4FD000B4626 /* go_no_go_stable_stimulus_short_task.json in Resources */,
 				E2A9D5711E3EBE8D000B4626 /* dd_time_6_month_short_task.json in Resources */,
+				E208AB4A1E50E766003CE02B /* morning_notification.json in Resources */,
+				E208AB481E50E6F5003CE02B /* settings_test.json in Resources */,
 				E2A9D56D1E3EBE8D000B4626 /* bart_250_dollars_short_task.json in Resources */,
 				E2C9AEBE1E3AFC8400E9F871 /* Main.storyboard in Resources */,
 				E2A9D56E1E3EBE8D000B4626 /* dd_money_1_month_short_task.json in Resources */,
-				E2208AEF1E4E9BD60063D31F /* baseline-2.json in Resources */,
-				E2208B041E4F95CC0063D31F /* baseline-6.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +549,7 @@
 			files = (
 				E2021BFC1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift in Sources */,
 				E2A9D54F1E3E9AE7000B4626 /* ConsentStepGenerator.swift in Sources */,
+				E208AB551E50FCCA003CE02B /* CTFActionProcessor.swift in Sources */,
 				E218C8AD1E4FCE9800DBA342 /* CTFTabBarController.swift in Sources */,
 				E2021BFE1E3E6ED6005B7E07 /* ImpulsivityConsentSample.swift in Sources */,
 				E2A9D55F1E3EB06E000B4626 /* CTFSchedule.swift in Sources */,
@@ -534,13 +559,20 @@
 				E2021BF61E3E6983005B7E07 /* CTFActivitiesViewController.swift in Sources */,
 				E218C8B11E4FD06D00DBA342 /* CTFAppConfig.swift in Sources */,
 				E2208AFE1E4F83C90063D31F /* DemographicsResult.swift in Sources */,
+				E208AB571E50FCF6003CE02B /* CTFActionCreator.swift in Sources */,
 				E2208AF51E4E9DBA0063D31F /* CTFMultipleChoice.swift in Sources */,
+				E208AB501E50EDCC003CE02B /* CTFElementListWithBindingGenerator.swift in Sources */,
 				E2C9AEDC1E3B021800E9F871 /* OhmageCredentialStore.swift in Sources */,
 				E218C8B71E4FDEB400DBA342 /* CTFTaskViewController.swift in Sources */,
 				E2021C001E3E8F3D005B7E07 /* CTFAppState.swift in Sources */,
+				E208AB531E50FBE5003CE02B /* CTFActionDescriptor.swift in Sources */,
 				E2A9D55D1E3EAE84000B4626 /* CTFScheduleItem.swift in Sources */,
+				E208AB4C1E50E873003CE02B /* CTFTimePickerStepGenerator.swift in Sources */,
 				E2208AF31E4E9CF20063D31F /* Extensions.swift in Sources */,
 				E2C9AEB91E3AFC8400E9F871 /* AppDelegate.swift in Sources */,
+				E208AB4E1E50EBF7003CE02B /* CTFElementListWithBindingDescriptor.swift in Sources */,
+				E208AB591E50FEF5003CE02B /* CTFReduxStoreManager.swift in Sources */,
+				E208AB5B1E510096003CE02B /* CTFActivityRun.swift in Sources */,
 				E2208B021E4F8C360063D31F /* DemographicsResult+OMHDatapoint.swift in Sources */,
 				E218C8AF1E4FCFE400DBA342 /* CTFAppConfigPage.swift in Sources */,
 				E2A89A431E4E4B60003EF895 /* CTFResultsProcessorManager.swift in Sources */,

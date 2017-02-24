@@ -19,6 +19,7 @@ class CTFScheduleItem: Decodable {
     
     public let activity: JSON!
     public let resultTransforms: [RSRPResultTransform]
+    public let onCompletionActions: [CTFActionDescriptor]
     
     // MARK: - Deserialization
     
@@ -44,6 +45,17 @@ class CTFScheduleItem: Decodable {
             
             return resultTransforms.flatMap({ (transform) -> RSRPResultTransform? in
                 return RSRPResultTransform(json: transform)
+            })
+        }()
+        
+        
+        self.onCompletionActions = {
+            guard let actions: [JSON] = "onCompletionActions" <~~ json else {
+                return []
+            }
+            
+            return actions.flatMap({ (json) -> CTFActionDescriptor? in
+                return CTFActionDescriptor(json: json)
             })
         }()
         

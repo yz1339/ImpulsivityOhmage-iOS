@@ -22,8 +22,8 @@
       "guid": "Baseline-1",
       "activity": {
         "type": "elementFile",
-        "identifier": "baseline-1",
-        "elementFileName": "baseline-1"
+        "identifier": "baseline",
+        "elementFileName": "baseline"
       }
     },
     {
@@ -33,8 +33,8 @@
       "guid": "Baseline-2",
       "activity": {
         "type": "elementFile",
-        "identifier": "baseline-2",
-        "elementFileName": "baseline-2"
+        "identifier": "baseline-DD",
+        "elementFileName": "baseline-DD"
       }
     },
     {
@@ -44,30 +44,8 @@
       "guid": "Baseline-3",
       "activity": {
         "type": "elementFile",
-        "identifier": "baseline-3",
-        "elementFileName": "baseline-3"
-      }
-    },
-    {
-      "type": "recurring",
-      "identifier": "Baseline",
-      "title": "Baseline #4",
-      "guid": "Baseline-4",
-      "activity": {
-        "type": "elementFile",
-        "identifier": "baseline-4",
-        "elementFileName": "baseline-4"
-      }
-    },
-    {
-      "type": "recurring",
-      "identifier": "Baseline",
-      "title": "Baseline #5",
-      "guid": "Baseline-5",
-      "activity": {
-        "type": "elementFile",
-        "identifier": "baseline-5",
-        "elementFileName": "baseline-5"
+        "identifier": "baseline-DD",
+        "elementFileName": "baseline-DD"
       },
       "resultTransforms": [
         {
@@ -85,12 +63,12 @@
     {
       "type": "recurring",
       "identifier": "Baseline",
-      "title": "Baseline #6",
-      "guid": "Baseline-6",
+      "title": "Baseline #4",
+      "guid": "Baseline-4",
       "activity": {
         "type": "elementFile",
-        "identifier": "baseline-6",
-        "elementFileName": "baseline-6"
+        "identifier": "baseline-DD",
+        "elementFileName": "baseline-DD"
       },
       "resultTransforms": [
         {

@@ -105,34 +105,46 @@ class CTFActivitiesViewController: UITableViewController {
         
         tableView.deselectRow(at: indexPath, animated: true)
         
-        guard let item = self.scheduleItem(forIndexPath: indexPath),
-            let steps = CTFTaskBuilderManager.sharedBuilder.steps(forElement: item.activity as JsonElement) else {
-                return
+        guard let item = self.scheduleItem(forIndexPath: indexPath) else {
+            return
         }
         
+        let activityRun = CTFActivityRun(
+            identifier: item.identifier,
+            activity: item.activity as JsonElement,
+            resultTransforms: item.resultTransforms,
+            onCompletionActions: item.onCompletionActions)
+        let action = QueueActivityAction(uuid: UUID(), activityRun: activityRun)
+        CTFReduxStoreManager.mainStore.dispatch(action)
         
-        
-        let task = ORKOrderedTask(identifier: item.identifier, steps: steps)
-        
-        let taskFinishedHandler: ((ORKTaskViewController, ORKTaskViewControllerFinishReason, Error?) -> ()) = { [weak self] (taskViewController, reason, error) in
-            
-            if reason == ORKTaskViewControllerFinishReason.completed {
-                
-                let taskResult: ORKTaskResult = taskViewController.result
-                
-                CTFResultsProcessorManager.sharedResultsProcessor.processResult(taskResult: taskResult, resultTransforms: item.resultTransforms)
-                
-                
-            }
-            
-            self?.dismiss(animated: true, completion: nil)
-            
-        }
-        
-        let taskViewController = CTFTaskViewController(task: task, taskFinishedHandler: taskFinishedHandler)
-        
-        
-        present(taskViewController, animated: true, completion: nil)
+//        guard let item = self.scheduleItem(forIndexPath: indexPath),
+//            let steps = CTFTaskBuilderManager.sharedBuilder.steps(forElement: item.activity as JsonElement) else {
+//                return
+//        }
+//        
+//        
+//        
+//        let task = ORKOrderedTask(identifier: item.identifier, steps: steps)
+//        
+//        let taskFinishedHandler: ((ORKTaskViewController, ORKTaskViewControllerFinishReason, Error?) -> ()) = { [weak self] (taskViewController, reason, error) in
+//            
+//            if reason == ORKTaskViewControllerFinishReason.completed {
+//                
+//                let taskResult: ORKTaskResult = taskViewController.result
+//                
+//                CTFResultsProcessorManager.sharedResultsProcessor.processResult(taskResult: taskResult, resultTransforms: item.resultTransforms)
+//                
+//                
+//            }
+//            
+//            self?.dismiss(animated: true, completion: nil)
+//            
+//        }
+//        
+//        let taskViewController = CTFTaskViewController(task: task, taskFinishedHandler: taskFinishedHandler)
+//        
+//        
+//        present(taskViewController, animated: true, completion: nil)
         
         
     }

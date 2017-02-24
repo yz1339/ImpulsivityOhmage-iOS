@@ -1,0 +1,22 @@
+{
+  "type": "elementList",
+  "identifier": "Baseline",
+  "elements": [
+    {
+      "identifier": "introduction",
+      "type": "instruction",
+      "title": "Baseline Survey",
+      "text": "Please tell us a little bit about yourself!"
+    },
+    {
+      "type": "elementFile",
+      "identifier": "demographicsFile",
+      "elementFileName": "demographics"
+    },
+    {
+      "type": "elementFile",
+      "identifier": "dd_file",
+      "elementFileName": "dd_money_1_month_short_task"
+    }
+  ]
+}
