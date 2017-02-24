@@ -172,6 +172,7 @@
 		E2021BE81E3E5979005B7E07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E2A9D5601E3EB4FD000B4626 /* activities.json */,
 				E2208AEA1E4E8F170063D31F /* surveys.json */,
 				E218C8B21E4FD5CC00DBA342 /* appConfig.json */,
 				E208AB471E50E6F5003CE02B /* settings_test.json */,
@@ -182,7 +183,6 @@
 				E2A9D5691E3EBE8D000B4626 /* dd_money_6_month_short_task.json */,
 				E2A9D56A1E3EBE8D000B4626 /* dd_time_1_month_short_task.json */,
 				E2A9D56B1E3EBE8D000B4626 /* dd_time_6_month_short_task.json */,
-				E2A9D5601E3EB4FD000B4626 /* activities.json */,
 				E2A9D5611E3EB4FD000B4626 /* go_no_go_stable_stimulus_short_task.json */,
 				E2A9D5621E3EB4FD000B4626 /* go_no_go_variable_stimulus_short_task.json */,
 				E2208AE81E4E8D4D0063D31F /* demographics.json */,
@@ -211,6 +211,13 @@
 				E208AB5A1E510096003CE02B /* CTFActivityRun.swift */,
 			);
 			name = Actions;
+			sourceTree = "<group>";
+		};
+		E20D5C3D1E5FC14D006655E8 /* SimonSays */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SimonSays;
 			sourceTree = "<group>";
 		};
 		E2208AFC1E4F838D0063D31F /* RSRP */ = {
@@ -270,6 +277,7 @@
 		E2C9AEB71E3AFC8400E9F871 /* ImpulsivityOhmage */ = {
 			isa = PBXGroup;
 			children = (
+				E20D5C3D1E5FC14D006655E8 /* SimonSays */,
 				E2C9AEB81E3AFC8400E9F871 /* AppDelegate.swift */,
 				E2C9AEDB1E3B021800E9F871 /* OhmageCredentialStore.swift */,
 				E2C9AEE61E3B052300E9F871 /* LogManager.swift */,

@@ -1,11 +1,6 @@
 {
   "pages" : [
     {
-      "title": "H-Tech Surveys",
-      "shortTitle": "H-Tech",
-      "activityFileName": "surveys"
-    },
-    {
       "title": "Impulsivity Activities",
       "shortTitle": "Impulsivity",
       "activityFileName": "activities"
