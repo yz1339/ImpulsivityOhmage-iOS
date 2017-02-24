@@ -70,42 +70,37 @@ class RSSimonSaysStepViewController: ORKStepViewController {
             
         }
         
-        let greenTapGesture = UITapGestureRecognizer(target: self, action: #selector(RSSimonSaysStepViewController.handleGreenTap))
+        let greenTapGesture = RSSSimonSaysGestureRecognizer(onBegin: {
+            self.startFlash(view: self.greenFlashView)
+        }) {
+            self.endFlash(view: self.greenFlashView)
+        }
+        
         self.greenView.addGestureRecognizer(greenTapGesture)
         
-        let yellowTapGesture = UITapGestureRecognizer(target: self, action: #selector(RSSimonSaysStepViewController.handleYellowTap))
+        let yellowTapGesture = RSSSimonSaysGestureRecognizer(onBegin: {
+            self.startFlash(view: self.yellowFlashView)
+        }) {
+            self.endFlash(view: self.yellowFlashView)
+        }
         self.yellowView.addGestureRecognizer(yellowTapGesture)
         
         
-        let redTapGesture = UITapGestureRecognizer(target: self, action: #selector(RSSimonSaysStepViewController.handleRedTap))
+        let redTapGesture = RSSSimonSaysGestureRecognizer(onBegin: {
+            self.startFlash(view: self.redFlashView)
+        }) {
+            self.endFlash(view: self.redFlashView)
+        }
+        
         self.redView.addGestureRecognizer(redTapGesture)
         
-        let blueTapGesture = UITapGestureRecognizer(target: self, action: #selector(RSSimonSaysStepViewController.handleBlueTap))
+        let blueTapGesture = RSSSimonSaysGestureRecognizer(onBegin: {
+            self.startFlash(view: self.blueFlashView)
+        }) {
+            self.endFlash(view: self.blueFlashView)
+        }
+        
         self.blueView.addGestureRecognizer(blueTapGesture)
-        
-    }
-    
-    func handleGreenTap(gestureRecognizer: UITapGestureRecognizer) {
-        
-        self.flashView(view: self.greenFlashView, duration: 0.10)
-
-    }
-    
-    func handleYellowTap(gestureRecognizer: UITapGestureRecognizer) {
-        
-        self.flashView(view: self.yellowFlashView, duration: 0.10)
-        
-    }
-    
-    func handleRedTap(gestureRecognizer: UITapGestureRecognizer) {
-        
-        self.flashView(view: self.redFlashView, duration: 0.10)
-        
-    }
-    
-    func handleBlueTap(gestureRecognizer: UITapGestureRecognizer) {
-        
-        self.flashView(view: self.blueFlashView, duration: 0.10)
         
     }
     

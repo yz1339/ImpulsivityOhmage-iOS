@@ -34,6 +34,7 @@
 		E20D5C4A1E5FCEA9006655E8 /* RSSimonSaysTrial.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20D5C491E5FCEA9006655E8 /* RSSimonSaysTrial.swift */; };
 		E20D5C4C1E5FCF66006655E8 /* RSSimonSaysTrialResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20D5C4B1E5FCF66006655E8 /* RSSimonSaysTrialResult.swift */; };
 		E20D5C4E1E5FD051006655E8 /* RSSimonSaysResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20D5C4D1E5FD051006655E8 /* RSSimonSaysResult.swift */; };
+		E20D5C501E607BC4006655E8 /* RSSSimonSaysGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20D5C4F1E607BC4006655E8 /* RSSSimonSaysGestureRecognizer.swift */; };
 		E218C8AD1E4FCE9800DBA342 /* CTFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218C8AC1E4FCE9800DBA342 /* CTFTabBarController.swift */; };
 		E218C8AF1E4FCFE400DBA342 /* CTFAppConfigPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218C8AE1E4FCFE400DBA342 /* CTFAppConfigPage.swift */; };
 		E218C8B11E4FD06D00DBA342 /* CTFAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218C8B01E4FD06D00DBA342 /* CTFAppConfig.swift */; };
@@ -112,6 +113,7 @@
 		E20D5C491E5FCEA9006655E8 /* RSSimonSaysTrial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSimonSaysTrial.swift; sourceTree = "<group>"; };
 		E20D5C4B1E5FCF66006655E8 /* RSSimonSaysTrialResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSimonSaysTrialResult.swift; sourceTree = "<group>"; };
 		E20D5C4D1E5FD051006655E8 /* RSSimonSaysResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSimonSaysResult.swift; sourceTree = "<group>"; };
+		E20D5C4F1E607BC4006655E8 /* RSSSimonSaysGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSSimonSaysGestureRecognizer.swift; sourceTree = "<group>"; };
 		E218C8AC1E4FCE9800DBA342 /* CTFTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFTabBarController.swift; sourceTree = "<group>"; };
 		E218C8AE1E4FCFE400DBA342 /* CTFAppConfigPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFAppConfigPage.swift; sourceTree = "<group>"; };
 		E218C8B01E4FD06D00DBA342 /* CTFAppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFAppConfig.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				E20D5C4B1E5FCF66006655E8 /* RSSimonSaysTrialResult.swift */,
 				E20D5C4D1E5FD051006655E8 /* RSSimonSaysResult.swift */,
 				E20D5C441E5FCD74006655E8 /* RSSimonSaysStepViewController.swift */,
+				E20D5C4F1E607BC4006655E8 /* RSSSimonSaysGestureRecognizer.swift */,
 				E20D5C451E5FCD74006655E8 /* RSSimonSaysStepViewController.xib */,
 			);
 			name = SimonSays;
@@ -590,6 +593,7 @@
 				E2A9D55F1E3EB06E000B4626 /* CTFSchedule.swift in Sources */,
 				E2C9AEE71E3B052300E9F871 /* LogManager.swift in Sources */,
 				E2208B001E4F83E50063D31F /* DemographicsResultTransformer.swift in Sources */,
+				E20D5C501E607BC4006655E8 /* RSSSimonSaysGestureRecognizer.swift in Sources */,
 				E2021BF81E3E698E005B7E07 /* CTFSettingsViewController.swift in Sources */,
 				E2021BF61E3E6983005B7E07 /* CTFActivitiesViewController.swift in Sources */,
 				E218C8B11E4FD06D00DBA342 /* CTFAppConfig.swift in Sources */,
