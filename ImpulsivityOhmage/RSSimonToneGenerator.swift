@@ -8,6 +8,7 @@
 
 import UIKit
 import TGSineWaveToneGenerator
+import AudioToolbox
 
 class RSSimonToneGenerator: NSObject {
     
@@ -21,7 +22,7 @@ class RSSimonToneGenerator: NSObject {
     static let maxAmplitude: Double = 0.8
     
     var toneGeneratorMap = [RSSimonSaysStimulus: TGSineWaveToneGenerator]()
-    var errorTone = TGSineWaveToneGenerator(frequency: CGFloat(150.00), amplitude: CGFloat(RSSimonToneGenerator.maxAmplitude))
+    var errorTone = TGSineWaveToneGenerator(frequency: CGFloat(200.00), amplitude: CGFloat(RSSimonToneGenerator.maxAmplitude))
     
     override init() {
         super.init()
@@ -41,6 +42,7 @@ class RSSimonToneGenerator: NSObject {
     
     func playError() {
         errorTone.play()
+        AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
     }
     
     func stopError() {

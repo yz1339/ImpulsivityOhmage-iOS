@@ -293,7 +293,7 @@ class RSSimonSaysStepViewController: ORKStepViewController {
     
     //fill this in at some point
     private static func generateDecayConstant(difficulty: Int) -> Double {
-        return 0.04
+        return 0.04 * Double(difficulty)
     }
     
     private static func stimulusLengthGenerator(timeConstant: TimeInterval, difficulty: Int) -> (Int) -> TimeInterval {
