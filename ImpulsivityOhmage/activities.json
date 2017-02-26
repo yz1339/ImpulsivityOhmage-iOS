@@ -6,18 +6,6 @@
   "items": [
     {
       "type": "recurring",
-      "identifier": "simon-says",
-      "title": "Simon Says",
-      "guid": "simon-says-1",
-      "activity": {
-        "type": "RSSimonSays",
-        "identifier": "simonSays",
-        "title": "this is a placeholder for simon says",
-        "difficulty": 1
-      }
-    },
-    {
-      "type": "recurring",
       "identifier": "go-no-go-stable",
       "title": "Square Task #1",
       "guid": "go-no-go-stable-1",
