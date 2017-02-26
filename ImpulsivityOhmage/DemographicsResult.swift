@@ -11,6 +11,8 @@ import ResearchSuiteResultsProcessor
 
 public class DemographicsResult: RSRPIntermediateResult {
     
+    static public let kType = "Demographics"
+    
     //gender
     public let gender: String?
     //age
@@ -23,6 +25,9 @@ public class DemographicsResult: RSRPIntermediateResult {
     public let employment: [String]?
     
     public init(
+        uuid: UUID,
+        taskIdentifier: String,
+        taskRunUUID: UUID,
         gender: String?,
         age: Int?,
         zipCode: String?,
@@ -35,7 +40,14 @@ public class DemographicsResult: RSRPIntermediateResult {
         self.education = education
         self.employment = employment
         
-        super.init(type: "Demographics")
+//        super.init(type: "Demographics")
+        
+        super.init(
+            type: DemographicsResult.kType,
+            uuid: uuid,
+            taskIdentifier: taskIdentifier,
+            taskRunUUID: taskRunUUID
+        )
     }
 
 }

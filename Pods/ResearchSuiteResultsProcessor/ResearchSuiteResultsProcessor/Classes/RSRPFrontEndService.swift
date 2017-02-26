@@ -21,16 +21,31 @@ class RSRPFrontEndService: NSObject {
         
         let intermediateResults = resultTransforms.flatMap { (resultTransform) -> RSRPIntermediateResult? in
             
-            var selectedResults: [String: ORKStepResult] = [:]
+            var parameters: [String: AnyObject] = [:]
             resultTransform.inputMapping.forEach({ (inputMapping) in
                 
-                if let result = taskResult.stepResult(forStepIdentifier: inputMapping.stepIdentifier) {
-                    selectedResults[inputMapping.parameter] = result
+                switch inputMapping.mappingType {
+                case .stepIdentifier:
+                    if let stepIdentifier = inputMapping.value as? String,
+                        let result = taskResult.stepResult(forStepIdentifier: stepIdentifier) {
+                        parameters[inputMapping.parameter] = result
+                    }
+                
+                case .constant:
+                    parameters[inputMapping.parameter] = inputMapping.value
+                
+                default:
+                    break
                 }
                 
             })
             
-            return self.transformResult(type: resultTransform.transform, parameters: selectedResults)
+            return self.transformResult(
+                type: resultTransform.transform,
+                taskIdentifier: taskResult.identifier,
+                taskRunUUID: taskResult.taskRunUUID,
+                parameters: parameters
+            )
         }
         
         
@@ -39,11 +54,16 @@ class RSRPFrontEndService: NSObject {
     }
     
     
-    private func transformResult(type: String, parameters: [String: ORKStepResult]) -> RSRPIntermediateResult? {
+    private func transformResult(
+        type: String,
+        taskIdentifier: String,
+        taskRunUUID: UUID,
+        parameters: [String: AnyObject]
+    ) -> RSRPIntermediateResult? {
         
         for transformer in self.transformers {
             if transformer.supportsType(type: type),
-                let intermediateResult = transformer.transform(parameters: parameters) {
+                let intermediateResult = transformer.transform(taskIdentifier: taskIdentifier, taskRunUUID: taskRunUUID, parameters: parameters) {
                 return intermediateResult
             }
         }
