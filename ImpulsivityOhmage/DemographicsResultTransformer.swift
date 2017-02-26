@@ -21,7 +21,11 @@ class DemographicsResultTransformer: RSRPFrontEndTransformer {
     }
 
     
-    public static func transform(parameters: [String : ORKStepResult]) -> RSRPIntermediateResult? {
+    public static func transform(
+        taskIdentifier: String,
+        taskRunUUID: UUID,
+        parameters: [String: AnyObject]
+        ) -> RSRPIntermediateResult? {
         
         let gender: String? = {
             guard let stepResult = parameters["GenderChoiceResult"],
@@ -69,6 +73,9 @@ class DemographicsResultTransformer: RSRPFrontEndTransformer {
         }()
         
         let demographics = DemographicsResult(
+            uuid: UUID(),
+            taskIdentifier: taskIdentifier,
+            taskRunUUID: taskRunUUID,
             gender: gender,
             age: age,
             zipCode: zipCode,
