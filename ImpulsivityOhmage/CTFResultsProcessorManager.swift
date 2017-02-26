@@ -22,6 +22,7 @@ class CTFResultsProcessorManager: NSObject {
         
         self.rsrp = RSRPResultsProcessor(
             frontEndTransformers: [
+                RSSimonSaysSummaryTransformer.self,
                 DemographicsResultTransformer.self,
                 CTFDelayDiscountingRawResultsTransformer.self,
                 

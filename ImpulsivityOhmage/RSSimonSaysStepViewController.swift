@@ -377,7 +377,7 @@ class RSSimonSaysStepViewController: ORKStepViewController {
                     self.monitorStimuli(stimuli: remainingStimuli, responses: accumulatedResponse, completion: completion)
                 }
                 else {
-                    completion(false, responses)
+                    completion(false, responses + [response])
                 }
             })
         }
@@ -444,6 +444,7 @@ class RSSimonSaysStepViewController: ORKStepViewController {
             let result = RSSimonSaysResult(identifier: step!.identifier)
             result.startDate = parentResult.startDate
             result.endDate = parentResult.endDate
+            result.step = self.step as? RSSimonSaysStep
             result.trialResults = trialResults
             
             parentResult.results = [result]

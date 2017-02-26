@@ -8,6 +8,8 @@
 
 import ResearchKit
 
-class RSSimonSaysResult: ORKResult {
+public class RSSimonSaysResult: ORKResult {
+    public var step: RSSimonSaysStep?
     public var trialResults: [RSSimonSaysTrialResult]?
+    
 }

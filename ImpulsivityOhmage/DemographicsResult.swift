@@ -40,8 +40,6 @@ public class DemographicsResult: RSRPIntermediateResult {
         self.education = education
         self.employment = employment
         
-//        super.init(type: "Demographics")
-        
         super.init(
             type: DemographicsResult.kType,
             uuid: uuid,

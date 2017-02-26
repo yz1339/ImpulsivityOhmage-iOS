@@ -14,7 +14,15 @@
         "identifier": "simonSays",
         "title": "this is a placeholder for simon says",
         "difficulty": 1
-      }
+      },
+      "resultTransforms": [
+        {
+          "transform": "SimonSaysSummary",
+          "inputMapping": [
+            {"stepIdentifier":"simonSays", "parameter":"simonSaysStepResult"}
+          ]
+        }
+      ]
     },
     {
       "type": "recurring",

@@ -50,6 +50,8 @@
 		E2208B021E4F8C360063D31F /* DemographicsResult+OMHDatapoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2208B011E4F8C360063D31F /* DemographicsResult+OMHDatapoint.swift */; };
 		E2266F751E521F1700169E85 /* baseline-DD.json in Resources */ = {isa = PBXBuildFile; fileRef = E2266F731E521F1700169E85 /* baseline-DD.json */; };
 		E2266F761E521F1700169E85 /* baseline.json in Resources */ = {isa = PBXBuildFile; fileRef = E2266F741E521F1700169E85 /* baseline.json */; };
+		E25C1CD11E6374A40078F0E0 /* RSSimonSaysSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25C1CD01E6374A40078F0E0 /* RSSimonSaysSummary.swift */; };
+		E25C1CD31E6375EF0078F0E0 /* RSSimonSaysSummaryTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25C1CD21E6375EF0078F0E0 /* RSSimonSaysSummaryTransformer.swift */; };
 		E261B7D31E636E1600DF711A /* RSSimonSaysStepGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E261B7D21E636E1600DF711A /* RSSimonSaysStepGenerator.swift */; };
 		E2A89A431E4E4B60003EF895 /* CTFResultsProcessorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A89A421E4E4B60003EF895 /* CTFResultsProcessorManager.swift */; };
 		E2A9D54F1E3E9AE7000B4626 /* ConsentStepGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D54E1E3E9AE7000B4626 /* ConsentStepGenerator.swift */; };
@@ -130,6 +132,8 @@
 		E2208B011E4F8C360063D31F /* DemographicsResult+OMHDatapoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DemographicsResult+OMHDatapoint.swift"; sourceTree = "<group>"; };
 		E2266F731E521F1700169E85 /* baseline-DD.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "baseline-DD.json"; sourceTree = "<group>"; };
 		E2266F741E521F1700169E85 /* baseline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = baseline.json; sourceTree = "<group>"; };
+		E25C1CD01E6374A40078F0E0 /* RSSimonSaysSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSimonSaysSummary.swift; sourceTree = "<group>"; };
+		E25C1CD21E6375EF0078F0E0 /* RSSimonSaysSummaryTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSimonSaysSummaryTransformer.swift; sourceTree = "<group>"; };
 		E261B7D21E636E1600DF711A /* RSSimonSaysStepGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSimonSaysStepGenerator.swift; sourceTree = "<group>"; };
 		E2A89A421E4E4B60003EF895 /* CTFResultsProcessorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFResultsProcessorManager.swift; sourceTree = "<group>"; };
 		E2A9D54E1E3E9AE7000B4626 /* ConsentStepGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentStepGenerator.swift; sourceTree = "<group>"; };
@@ -246,6 +250,8 @@
 				E20D5C4F1E607BC4006655E8 /* RSSimonSaysGestureRecognizer.swift */,
 				E20D5C511E608313006655E8 /* RSSimonToneGenerator.swift */,
 				E20D5C451E5FCD74006655E8 /* RSSimonSaysStepViewController.xib */,
+				E25C1CD01E6374A40078F0E0 /* RSSimonSaysSummary.swift */,
+				E25C1CD21E6375EF0078F0E0 /* RSSimonSaysSummaryTransformer.swift */,
 			);
 			name = SimonSays;
 			sourceTree = "<group>";
@@ -611,10 +617,12 @@
 				E208AB531E50FBE5003CE02B /* CTFActionDescriptor.swift in Sources */,
 				E2A9D55D1E3EAE84000B4626 /* CTFScheduleItem.swift in Sources */,
 				E208AB4C1E50E873003CE02B /* CTFTimePickerStepGenerator.swift in Sources */,
+				E25C1CD11E6374A40078F0E0 /* RSSimonSaysSummary.swift in Sources */,
 				E2208AF31E4E9CF20063D31F /* Extensions.swift in Sources */,
 				E20D5C461E5FCD74006655E8 /* RSSimonSaysStepViewController.swift in Sources */,
 				E20D5C4A1E5FCEA9006655E8 /* RSSimonSaysTrial.swift in Sources */,
 				E2C9AEB91E3AFC8400E9F871 /* AppDelegate.swift in Sources */,
+				E25C1CD31E6375EF0078F0E0 /* RSSimonSaysSummaryTransformer.swift in Sources */,
 				E208AB4E1E50EBF7003CE02B /* CTFElementListWithBindingDescriptor.swift in Sources */,
 				E208AB591E50FEF5003CE02B /* CTFReduxStoreManager.swift in Sources */,
 				E261B7D31E636E1600DF711A /* RSSimonSaysStepGenerator.swift in Sources */,
