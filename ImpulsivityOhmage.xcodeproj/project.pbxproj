@@ -41,6 +41,8 @@
 		E2208B021E4F8C360063D31F /* DemographicsResult+OMHDatapoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2208B011E4F8C360063D31F /* DemographicsResult+OMHDatapoint.swift */; };
 		E2266F751E521F1700169E85 /* baseline-DD.json in Resources */ = {isa = PBXBuildFile; fileRef = E2266F731E521F1700169E85 /* baseline-DD.json */; };
 		E2266F761E521F1700169E85 /* baseline.json in Resources */ = {isa = PBXBuildFile; fileRef = E2266F741E521F1700169E85 /* baseline.json */; };
+		E261B7CE1E636BC600DF711A /* RSSimonSaysStepDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E261B7CC1E636BC600DF711A /* RSSimonSaysStepDescriptor.swift */; };
+		E261B7CF1E636BC600DF711A /* RSSimonSaysStepGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E261B7CD1E636BC600DF711A /* RSSimonSaysStepGenerator.swift */; };
 		E2A89A431E4E4B60003EF895 /* CTFResultsProcessorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A89A421E4E4B60003EF895 /* CTFResultsProcessorManager.swift */; };
 		E2A9D54F1E3E9AE7000B4626 /* ConsentStepGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D54E1E3E9AE7000B4626 /* ConsentStepGenerator.swift */; };
 		E2A9D55D1E3EAE84000B4626 /* CTFScheduleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D55C1E3EAE84000B4626 /* CTFScheduleItem.swift */; };
@@ -111,6 +113,8 @@
 		E2208B011E4F8C360063D31F /* DemographicsResult+OMHDatapoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DemographicsResult+OMHDatapoint.swift"; sourceTree = "<group>"; };
 		E2266F731E521F1700169E85 /* baseline-DD.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "baseline-DD.json"; sourceTree = "<group>"; };
 		E2266F741E521F1700169E85 /* baseline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = baseline.json; sourceTree = "<group>"; };
+		E261B7CC1E636BC600DF711A /* RSSimonSaysStepDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSimonSaysStepDescriptor.swift; sourceTree = "<group>"; };
+		E261B7CD1E636BC600DF711A /* RSSimonSaysStepGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSimonSaysStepGenerator.swift; sourceTree = "<group>"; };
 		E2A89A421E4E4B60003EF895 /* CTFResultsProcessorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFResultsProcessorManager.swift; sourceTree = "<group>"; };
 		E2A9D54E1E3E9AE7000B4626 /* ConsentStepGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentStepGenerator.swift; sourceTree = "<group>"; };
 		E2A9D55C1E3EAE84000B4626 /* CTFScheduleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFScheduleItem.swift; sourceTree = "<group>"; };
@@ -216,6 +220,8 @@
 		E20D5C3D1E5FC14D006655E8 /* SimonSays */ = {
 			isa = PBXGroup;
 			children = (
+				E261B7CC1E636BC600DF711A /* RSSimonSaysStepDescriptor.swift */,
+				E261B7CD1E636BC600DF711A /* RSSimonSaysStepGenerator.swift */,
 			);
 			name = SimonSays;
 			sourceTree = "<group>";
@@ -555,6 +561,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E261B7CE1E636BC600DF711A /* RSSimonSaysStepDescriptor.swift in Sources */,
 				E2021BFC1E3E6B23005B7E07 /* CTFTaskBuilderManager.swift in Sources */,
 				E2A9D54F1E3E9AE7000B4626 /* ConsentStepGenerator.swift in Sources */,
 				E208AB551E50FCCA003CE02B /* CTFActionProcessor.swift in Sources */,
@@ -580,6 +587,7 @@
 				E2C9AEB91E3AFC8400E9F871 /* AppDelegate.swift in Sources */,
 				E208AB4E1E50EBF7003CE02B /* CTFElementListWithBindingDescriptor.swift in Sources */,
 				E208AB591E50FEF5003CE02B /* CTFReduxStoreManager.swift in Sources */,
+				E261B7CF1E636BC600DF711A /* RSSimonSaysStepGenerator.swift in Sources */,
 				E208AB5B1E510096003CE02B /* CTFActivityRun.swift in Sources */,
 				E2208B021E4F8C360063D31F /* DemographicsResult+OMHDatapoint.swift in Sources */,
 				E218C8AF1E4FCFE400DBA342 /* CTFAppConfigPage.swift in Sources */,
