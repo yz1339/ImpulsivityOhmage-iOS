@@ -13,14 +13,14 @@ target 'ImpulsivityOhmage' do
   # pod "ResearchKit", '~> 1.3'
   # pod "ResearchSuiteTaskBuilder", :path => '~/Developer/Foundry/ResearchSuite/ios/ResearchSuiteTaskBuilder'
 
-  pod "OhmageOMHSDK"
-  pod "OhmageOMHSDK/RKSupport"
-  pod "OhmageOMHSDK/RSRPSupport"
-  pod "sdlrkx"
-  pod "ResearchKit", '~> 1.3'
-  pod "ResearchSuiteTaskBuilder"
-  pod "ResearchSuiteResultsProcessor"
-  pod 'ReSwift'
+  pod "OhmageOMHSDK", "0.1.0"
+  pod "OhmageOMHSDK/RKSupport", "0.1.0"
+  pod "OhmageOMHSDK/RSRPSupport", "0.1.0"
+  pod "sdlrkx", "0.8.0"
+  pod "ResearchKit", '~> 1.4'
+  pod "ResearchSuiteTaskBuilder", "0.2.0"
+  pod "ResearchSuiteResultsProcessor", "0.2.0"
+  pod 'ReSwift', "~> 3.0"
 
   pod "TGSineWaveToneGenerator"
 
