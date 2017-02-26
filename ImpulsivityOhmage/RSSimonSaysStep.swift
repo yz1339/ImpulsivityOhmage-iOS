@@ -14,7 +14,7 @@ public class RSSimonSaysStep: ORKStep {
     var difficulty: Int = 1
     var maxResponseTime: TimeInterval = 5.0
     
-    open func stepViewControllerClass() -> AnyClass {
+    open override func stepViewControllerClass() -> AnyClass {
         return RSSimonSaysStepViewController.self
     }
 
