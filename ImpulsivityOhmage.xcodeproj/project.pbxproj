@@ -52,6 +52,7 @@
 		E2266F761E521F1700169E85 /* baseline.json in Resources */ = {isa = PBXBuildFile; fileRef = E2266F741E521F1700169E85 /* baseline.json */; };
 		E25C1CD11E6374A40078F0E0 /* RSSimonSaysSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25C1CD01E6374A40078F0E0 /* RSSimonSaysSummary.swift */; };
 		E25C1CD31E6375EF0078F0E0 /* RSSimonSaysSummaryTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25C1CD21E6375EF0078F0E0 /* RSSimonSaysSummaryTransformer.swift */; };
+		E25C1CD51E637D680078F0E0 /* RSSimonSaysSummary+OMHDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25C1CD41E637D680078F0E0 /* RSSimonSaysSummary+OMHDataPoint.swift */; };
 		E261B7D31E636E1600DF711A /* RSSimonSaysStepGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E261B7D21E636E1600DF711A /* RSSimonSaysStepGenerator.swift */; };
 		E2A89A431E4E4B60003EF895 /* CTFResultsProcessorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A89A421E4E4B60003EF895 /* CTFResultsProcessorManager.swift */; };
 		E2A9D54F1E3E9AE7000B4626 /* ConsentStepGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9D54E1E3E9AE7000B4626 /* ConsentStepGenerator.swift */; };
@@ -134,6 +135,7 @@
 		E2266F741E521F1700169E85 /* baseline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = baseline.json; sourceTree = "<group>"; };
 		E25C1CD01E6374A40078F0E0 /* RSSimonSaysSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSimonSaysSummary.swift; sourceTree = "<group>"; };
 		E25C1CD21E6375EF0078F0E0 /* RSSimonSaysSummaryTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSimonSaysSummaryTransformer.swift; sourceTree = "<group>"; };
+		E25C1CD41E637D680078F0E0 /* RSSimonSaysSummary+OMHDataPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RSSimonSaysSummary+OMHDataPoint.swift"; sourceTree = "<group>"; };
 		E261B7D21E636E1600DF711A /* RSSimonSaysStepGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSimonSaysStepGenerator.swift; sourceTree = "<group>"; };
 		E2A89A421E4E4B60003EF895 /* CTFResultsProcessorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTFResultsProcessorManager.swift; sourceTree = "<group>"; };
 		E2A9D54E1E3E9AE7000B4626 /* ConsentStepGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentStepGenerator.swift; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 				E20D5C451E5FCD74006655E8 /* RSSimonSaysStepViewController.xib */,
 				E25C1CD01E6374A40078F0E0 /* RSSimonSaysSummary.swift */,
 				E25C1CD21E6375EF0078F0E0 /* RSSimonSaysSummaryTransformer.swift */,
+				E25C1CD41E637D680078F0E0 /* RSSimonSaysSummary+OMHDataPoint.swift */,
 			);
 			name = SimonSays;
 			sourceTree = "<group>";
@@ -628,6 +631,7 @@
 				E261B7D31E636E1600DF711A /* RSSimonSaysStepGenerator.swift in Sources */,
 				E208AB5B1E510096003CE02B /* CTFActivityRun.swift in Sources */,
 				E2208B021E4F8C360063D31F /* DemographicsResult+OMHDatapoint.swift in Sources */,
+				E25C1CD51E637D680078F0E0 /* RSSimonSaysSummary+OMHDataPoint.swift in Sources */,
 				E20D5C4E1E5FD051006655E8 /* RSSimonSaysResult.swift in Sources */,
 				E218C8AF1E4FCFE400DBA342 /* CTFAppConfigPage.swift in Sources */,
 				E2A89A431E4E4B60003EF895 /* CTFResultsProcessorManager.swift in Sources */,
