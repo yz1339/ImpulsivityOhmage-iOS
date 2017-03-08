@@ -158,6 +158,26 @@
           ]
         }
       ]
+    },
+    {
+      "type": "recurring",
+      "identifier": "shooting-game",
+      "title": "Shooting Game",
+      "guid": "shooting-game-1",
+      "activity": {
+        "type": "RSShootingGame",
+        "identifier": "shootingGame",
+        "title": "Placeholder for shooting game",
+        "difficulty": 1
+      },
+      "resultTransforms": [
+        {
+          "transform": "ShootingGameSummary",
+          "inputMapping": [
+            {"stepIdentifier": "shootingGame", "parameter": "shootingGameStepResult"}
+          ]
+        }
+      ]
     }
   ]
 }

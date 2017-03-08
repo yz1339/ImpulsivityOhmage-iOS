@@ -15,6 +15,7 @@ class CTFTaskBuilderManager: NSObject {
     static let randomMultipleChoice = false
     
     static let stepGeneratorServices: [RSTBStepGenerator] = [
+        RSShootingGameStepGenerator(),
         RSTBInstructionStepGenerator(),
         RSTBTextFieldStepGenerator(),
         RSTBIntegerStepGenerator(),
