@@ -161,23 +161,44 @@
     },
     {
       "type": "recurring",
-      "identifier": "shooting-game",
-      "title": "Shooting Game",
-      "guid": "shooting-game-1",
+      "identifier": "music-game",
+      "title": "Music Game",
+      "guid": "music-game-1",
       "activity": {
-        "type": "RSShootingGame",
-        "identifier": "shootingGame",
-        "title": "Placeholder for shooting game",
+        "type": "RSMusicGameStep",
+        "identifier": "musicGame",
+        "title": "Placeholder for music game",
         "difficulty": 1
-      },
+        
+        },
       "resultTransforms": [
         {
-          "transform": "ShootingGameSummary",
+          "transform": "MusicGameSummary",
           "inputMapping": [
-            {"stepIdentifier": "shootingGame", "parameter": "shootingGameStepResult"}
+            {"stepIdentifier": "musicGame", "parameter": "musicGameStepResult"}
           ]
         }
       ]
+    },
+    {
+        "type": "recurring",
+        "identifier": "reaction-time",
+        "title": "Reaction Time",
+        "guid": "reaction-time-1",
+        "activity": {
+        "type": "RSReactionTimeStep",
+        "identifier": "reactionTime",
+        "title": "Placeholder for reaction time step",
+        "difficulty": 1
+        },
+        "resultTransforms": [
+        {
+          "transform": "ReactionTimeSummary",
+          "inputMapping": [
+            {"stepIdentifier": "reactionTime", "parameter": "reactionTimeResult"}
+          ]
+        }
+        ]
     }
   ]
 }

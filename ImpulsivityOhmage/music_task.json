@@ -1,0 +1,32 @@
+{
+    "type"      : "elementList",
+    "identifier": "music_task",
+    "elements"   : [
+       {
+            "identifier"   : "introduction",
+            "type"         : "instruction",
+            "title"        : "Welcome to the Music Game",
+            "text"         : "In this game you get to listen to a piece of music generated randomly for you and then play a task."
+       },
+       {
+            "type"        : "RSMusicGameStep",
+            "identifier"  : "musicGame",
+            "parameters": {
+            
+            }
+      },
+        {
+        "type"        : "ORKReactionTimeStep",
+        "identifier"  : "reactionTime",
+        "parameters": {
+                    
+        }
+        },
+      {
+            "identifier"   : "results",
+            "type"         : "instruction",
+            "title"        : "Thank you for completing the task!",
+            "text"         : ""
+      }
+  ]
+}

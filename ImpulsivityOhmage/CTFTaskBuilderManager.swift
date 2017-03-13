@@ -9,13 +9,15 @@
 import UIKit
 import ResearchSuiteTaskBuilder
 import sdlrkx
+import ResearchKit
 
 class CTFTaskBuilderManager: NSObject {
     
     static let randomMultipleChoice = false
     
     static let stepGeneratorServices: [RSTBStepGenerator] = [
-        RSShootingGameStepGenerator(),
+        RSMusicGameStepGenerator(),
+        RSReactionTimeGenerator(),
         RSTBInstructionStepGenerator(),
         RSTBTextFieldStepGenerator(),
         RSTBIntegerStepGenerator(),
